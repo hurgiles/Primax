@@ -1,0 +1,1477 @@
+<html lang="es">
+    <head>
+        <!-- Google Tag Manager -->
+        <script>
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5JVTFRG');
+        </script>
+        <!-- End Google Tag Manager -->
+
+        <meta charset="utf-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+            <!-- css scroll library -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+        <meta name="facebook-domain-verification" content="qu7x2bdr6gz7t5qgfskad4fms7b9fw" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+        <link href="https://fonts.cdnfonts.com/css/neo-sans-std" rel="stylesheet">
+        <link rel="stylesheet" href="estilos.css">
+        <!--<link rel="stylesheet" href="/colineal/datos/sweetalert.css">
+        <link rel="stylesheet" href="/colineal/datos/bootstrapValidator.min.css">
+        <link rel="stylesheet" href="/colineal/datos/bootstrap-select.min.css">-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,900&display=swap" rel="stylesheet">
+        <title>Page Listo</title>
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+        <!-- reCaptcha -->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        #form2, #confirmation {
+            display: none;
+        }
+        /* Sobrescribir el estilo de background-image de Bootstrap */
+        .was-validated .form-control:invalid {
+            background-image: none;
+            background-color: #feeced;
+        }
+        .progress-bar-success {
+            background-color: #F37D2A !important;
+        }
+        input[type="text"], input[type="date"], input[type="email"], input[type="tel"] {
+            padding-left: 15px; /* Ajusta este valor según sea necesario */
+        }
+        input[type="text"]::placeholder, input[type="date"]::placeholder, input[type="email"]::placeholder, input[type="tel"]::placeholder{
+            padding-left: 0.3px; /* Ajusta este valor según sea necesario */
+        }
+        .progress {
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+        @media (min-width: 768px) {
+            .submit-btn {
+                /*width: 48% !important;*/
+                /* padding: 10*/
+        }
+        }
+        @media only screen and (max-width: 480px) {
+            .progress-container {
+                position: relative;
+                width: 200px !important;
+                margin: 10px auto;
+            }
+            .footer-right {
+                margin-left: 60px !important; 
+            }
+        }
+    </style>      
+    </head>
+    <body class="inicio">
+        <div id="container">
+            <header id="main-header">
+            <img src="./img/primax_img.svg" alt="Descripción de la imagen">
+                <!--<nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav> / nav -->
+            </header><!-- / #main-header -->
+            <section id="main-section">
+            <div class="section-left">
+            <div class="section-left">
+    <div class="image-container">
+        <img src="./img/img1.svg" alt="First Image" class="image-slide active-image">
+        <img src="./img/img2.svg" alt="Promotional Image" id="unique-image" class="image-slide">
+        <img src="./img/duplicate_img.svg" alt="Third Image" class="image-slide ">
+    </div>
+</div>
+
+            <div class="section-right d-flex justify-content-center align-items-center">
+                <div class="card-body position-relative col-8 ">
+                    <!-- Formulario 1 -->
+                    <form id="formulariolanding" enctype="application/x-www-form-urlencoded" class="needs-validation" novalidate>
+                        <div class="col-md-12">
+                            
+                            <!-- Barra de progreso -->
+                            <div class="progress-container">
+                                <div class="label start" style="font-size: 10px; color: #FFFFFF;"><b>Datos Personales</b></div>
+                                <div class="label middle" style="font-weight: normal; font-size: 10px; color: #FFFFFF;">Contacto</div>
+                                <div class="label end" style="font-weight: normal; font-size: 10px; color: #FFFFFF;">Confirmación</div>
+                                <div class="progress">
+                                    <div id="progress-bar" class="progress-bar-success" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="circle start1"></div>
+                                    <div class="circle middle1"></div>
+                                    <div class="circle end1"></div>
+                                </div>
+                            </div>
+                            <div class="row g-3 ">
+                                <h2 style="color: #FFFFFF" class=" fw-bold h2 mt-0  d-none d-md-block">Regístrate y participa.</h2>
+                                <h2 style="color: #FFFFFF; font-weight: 700" class=" fw-bold h2 mt-0  d-block d-md-none">Regístrate y participa.</h2>
+                            </div>
+                            <div class="row g-3">
+                                <p style="font: size 12px; color: #FFFFFF">*Campos obligatorios</p>
+                            </div>
+                            <div class="row mb-3 form-group">
+                                <label for="form_nombre">Nombre*</label>
+                                <input type="text" class="form-control" id="form_nombre"  name="nombre" placeholder="Nombre"  pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+" required>
+                                <div class="invalid-feedback">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFb0lEQVR4nO2YW2xTdRzHjxJviMobqAm7AcIG6+X0vvV62vV22o11Z2uHxHjhwUBCFIh4CcbEB4kCxkCMCUpCUHmRxAeivBo10ZCgvBB3adfR9vT0ctqelm0w1q85I87AjF3P6aYP+yb/15PP55zf+f1//z9BrGY1q2lIKj5mYznARATf0EeCj7kkeJkrgndgTHAPjAue0JWSO/Rd0dV/suTu33PTwTxL/B8Cml4r+MN7y3T4R4Eeqpb9Qyj7ByH4GAheBoJnYH6V3CGUevrvLtcuFJ19KDh6fy06AvuzpuATKw/OMA9XgpHDAh3myoEwyrQIvnT4IiWuXhQdQfD2IM/b6KOTBuaxFYGf6osYK8Hw9XIgArnwBbu4AijYAuCt/mihm6aWFb7SO3yoHIzMNhq+YKXBW/zIW3xzebP3PRDEAw0FFx9Y6R0+XgmK4MsDz4vL7APf7UWuy30eJPlQwwQqvcMfrxR8vsuDvMmNnKHnaxDvPigfPhg5stLweaMbeUMPcjrXB7LgheCwZTlrnv83eL0LWb2zmtFStCR4eDyPVAKRP6TAp+w0ohYfohYvomYPxrs9SFl9dcHn9E7kdBSyGipdUFjX1y1QCUaOSoHPU72YeH4v5qZn8FfmpqYRG3gBeau/PnitKOBAVm07URd8zrP7yTIdLkgpm7yjF5P7DuL+xF/ch5zFVz88aUdWZZvOqkzPLFmgTEdel1rzvCOI+Mv7FwnEwi/dFagXXm1DRmUFpzS/v2QBgR76XeoPy9sDmNi9d5FAtG83cmavJPiM0gKu0xIHQdRuqyXv0FY53SZvCyA2sGeRwLgnhLxE+IxCFDCD7ezW1377/qFX5bRK8QtE6cHFAjYaORnw3M5upDtMb9Wuf//gWTl9nrcFEHUG76WvVjFicMqC53Z0geswfltbwDf4s9xNarSr5x7+uZkZjGodMuFNSLcbrtcuIS8Tl7vDjhldqN6eXRC4UyxhXBSQA99hRHq7sVJbwDPAyx0PogYX7gjlBYHbaQ7jWrs8+HYj2O2GKghmTQ2BUFHubBPVOzGbzS0IzMQmEdXYZMGntxvAbtOj5phd8oSScgezmIHCrRvJBYGp6yOIiQIy4dnntNM1S6jk7r8qd6qc0FOYHhlbELh59RomSJtMeB3Yrdp4bQHXrgtyR+KE3onJg+8gc/ZLZM6ex8S+Q0ho7HLhwW7RXK4pUOzZ9YbceT5n6EFSS2FCY59/8wnSjox8eKTaNMeWINCnk3sYSeoojHpDYI+fAnvyNEa9A0iorfLgN2uQbFO7awqAYdYUqb6EVHhO58RYMIw75crf+0ClgjE/A1YElwxPFmNN1kdrCsx/BSp4TOoxkNVRYE+cXjQLpT78BEmFWRJ8qo1EqlV9hlhqeCe9ibcFbtULL/b5tNaB+GtvLhKIHziClAguAT7Zqq7eaFF1LllgXsIW+ELKGTajpRBVWcB9+jlm8zxm+QK4M+cwLk6T0t48Ei3Ki0S9KTsCG3iLvyDlDJsh7ZhUWjDSacLITiPindLhky3KqfSmna2ElOTN3lcknWFldpvUArwKiWbFYUJOeLP3q/8KPtmsuCT7nlS89s51eX5Ycfgm5bVYk6L++6B/SsFqXZ8zuH9aOXjFb1yTdiPRyCRJem1W5/pm2Wu+SXl5vJV8iliOiPWY0zsOZDXUVMPhm1W3Ek2Kt5d0dSI3rM7VkiFtFzNqW7UR8IkW5ffJJnIbsdLhlHZFRmE+l1GYK/XDq6dTLeoLN5rJ2nc9yy7Sbl3HdXT1p3eYTnEdpl/YdmPxfvjUFo3AbtFcSW0mP0u0qYb45arzRoXt7Hw8vUO/IbONfJprb1/XsAevZjVEQ/MnF7GrGBH1TbgAAAAASUVORK5CYII=" 
+                                    alt="Advertencia" class="warning-icon">
+                                    *Ingrese su nombre 
+                                </div>
+                            </div>
+                            <div class="row mb-3 form-group">
+                                <label for="apellido">Apellido*</label>
+                                <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido"  pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+" required>
+                                <div class="invalid-feedback">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFb0lEQVR4nO2YW2xTdRzHjxJviMobqAm7AcIG6+X0vvV62vV22o11Z2uHxHjhwUBCFIh4CcbEB4kCxkCMCUpCUHmRxAeivBo10ZCgvBB3adfR9vT0ctqelm0w1q85I87AjF3P6aYP+yb/15PP55zf+f1//z9BrGY1q2lIKj5mYznARATf0EeCj7kkeJkrgndgTHAPjAue0JWSO/Rd0dV/suTu33PTwTxL/B8Cml4r+MN7y3T4R4Eeqpb9Qyj7ByH4GAheBoJnYH6V3CGUevrvLtcuFJ19KDh6fy06AvuzpuATKw/OMA9XgpHDAh3myoEwyrQIvnT4IiWuXhQdQfD2IM/b6KOTBuaxFYGf6osYK8Hw9XIgArnwBbu4AijYAuCt/mihm6aWFb7SO3yoHIzMNhq+YKXBW/zIW3xzebP3PRDEAw0FFx9Y6R0+XgmK4MsDz4vL7APf7UWuy30eJPlQwwQqvcMfrxR8vsuDvMmNnKHnaxDvPigfPhg5stLweaMbeUMPcjrXB7LgheCwZTlrnv83eL0LWb2zmtFStCR4eDyPVAKRP6TAp+w0ohYfohYvomYPxrs9SFl9dcHn9E7kdBSyGipdUFjX1y1QCUaOSoHPU72YeH4v5qZn8FfmpqYRG3gBeau/PnitKOBAVm07URd8zrP7yTIdLkgpm7yjF5P7DuL+xF/ch5zFVz88aUdWZZvOqkzPLFmgTEdel1rzvCOI+Mv7FwnEwi/dFagXXm1DRmUFpzS/v2QBgR76XeoPy9sDmNi9d5FAtG83cmavJPiM0gKu0xIHQdRuqyXv0FY53SZvCyA2sGeRwLgnhLxE+IxCFDCD7ezW1377/qFX5bRK8QtE6cHFAjYaORnw3M5upDtMb9Wuf//gWTl9nrcFEHUG76WvVjFicMqC53Z0geswfltbwDf4s9xNarSr5x7+uZkZjGodMuFNSLcbrtcuIS8Tl7vDjhldqN6eXRC4UyxhXBSQA99hRHq7sVJbwDPAyx0PogYX7gjlBYHbaQ7jWrs8+HYj2O2GKghmTQ2BUFHubBPVOzGbzS0IzMQmEdXYZMGntxvAbtOj5phd8oSScgezmIHCrRvJBYGp6yOIiQIy4dnntNM1S6jk7r8qd6qc0FOYHhlbELh59RomSJtMeB3Yrdp4bQHXrgtyR+KE3onJg+8gc/ZLZM6ex8S+Q0ho7HLhwW7RXK4pUOzZ9YbceT5n6EFSS2FCY59/8wnSjox8eKTaNMeWINCnk3sYSeoojHpDYI+fAnvyNEa9A0iorfLgN2uQbFO7awqAYdYUqb6EVHhO58RYMIw75crf+0ClgjE/A1YElwxPFmNN1kdrCsx/BSp4TOoxkNVRYE+cXjQLpT78BEmFWRJ8qo1EqlV9hlhqeCe9ibcFbtULL/b5tNaB+GtvLhKIHziClAguAT7Zqq7eaFF1LllgXsIW+ELKGTajpRBVWcB9+jlm8zxm+QK4M+cwLk6T0t48Ei3Ki0S9KTsCG3iLvyDlDJsh7ZhUWjDSacLITiPindLhky3KqfSmna2ElOTN3lcknWFldpvUArwKiWbFYUJOeLP3q/8KPtmsuCT7nlS89s51eX5Ycfgm5bVYk6L++6B/SsFqXZ8zuH9aOXjFb1yTdiPRyCRJem1W5/pm2Wu+SXl5vJV8iliOiPWY0zsOZDXUVMPhm1W3Ek2Kt5d0dSI3rM7VkiFtFzNqW7UR8IkW5ffJJnIbsdLhlHZFRmE+l1GYK/XDq6dTLeoLN5rJ2nc9yy7Sbl3HdXT1p3eYTnEdpl/YdmPxfvjUFo3AbtFcSW0mP0u0qYb45arzRoXt7Hw8vUO/IbONfJprb1/XsAevZjVEQ/MnF7GrGBH1TbgAAAAASUVORK5CYII=" 
+                                    alt="Advertencia" class="warning-icon">
+                                    *Ingrese su apellido 
+                                </div>
+                            </div>
+                            <div class="row mb-3 form-group" id="box_cedula">
+                                <label for="form_cedula">Número de cédula*</label>
+                                <input type="text" class="form-control" id="form_cedula" name="cedula" placeholder="Cédula" pattern="[0-9]+" minlength="10" maxlength="10" required>
+                                <div class="invalid-feedback">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFb0lEQVR4nO2YW2xTdRzHjxJviMobqAm7AcIG6+X0vvV62vV22o11Z2uHxHjhwUBCFIh4CcbEB4kCxkCMCUpCUHmRxAeivBo10ZCgvBB3adfR9vT0ctqelm0w1q85I87AjF3P6aYP+yb/15PP55zf+f1//z9BrGY1q2lIKj5mYznARATf0EeCj7kkeJkrgndgTHAPjAue0JWSO/Rd0dV/suTu33PTwTxL/B8Cml4r+MN7y3T4R4Eeqpb9Qyj7ByH4GAheBoJnYH6V3CGUevrvLtcuFJ19KDh6fy06AvuzpuATKw/OMA9XgpHDAh3myoEwyrQIvnT4IiWuXhQdQfD2IM/b6KOTBuaxFYGf6osYK8Hw9XIgArnwBbu4AijYAuCt/mihm6aWFb7SO3yoHIzMNhq+YKXBW/zIW3xzebP3PRDEAw0FFx9Y6R0+XgmK4MsDz4vL7APf7UWuy30eJPlQwwQqvcMfrxR8vsuDvMmNnKHnaxDvPigfPhg5stLweaMbeUMPcjrXB7LgheCwZTlrnv83eL0LWb2zmtFStCR4eDyPVAKRP6TAp+w0ohYfohYvomYPxrs9SFl9dcHn9E7kdBSyGipdUFjX1y1QCUaOSoHPU72YeH4v5qZn8FfmpqYRG3gBeau/PnitKOBAVm07URd8zrP7yTIdLkgpm7yjF5P7DuL+xF/ch5zFVz88aUdWZZvOqkzPLFmgTEdel1rzvCOI+Mv7FwnEwi/dFagXXm1DRmUFpzS/v2QBgR76XeoPy9sDmNi9d5FAtG83cmavJPiM0gKu0xIHQdRuqyXv0FY53SZvCyA2sGeRwLgnhLxE+IxCFDCD7ezW1377/qFX5bRK8QtE6cHFAjYaORnw3M5upDtMb9Wuf//gWTl9nrcFEHUG76WvVjFicMqC53Z0geswfltbwDf4s9xNarSr5x7+uZkZjGodMuFNSLcbrtcuIS8Tl7vDjhldqN6eXRC4UyxhXBSQA99hRHq7sVJbwDPAyx0PogYX7gjlBYHbaQ7jWrs8+HYj2O2GKghmTQ2BUFHubBPVOzGbzS0IzMQmEdXYZMGntxvAbtOj5phd8oSScgezmIHCrRvJBYGp6yOIiQIy4dnntNM1S6jk7r8qd6qc0FOYHhlbELh59RomSJtMeB3Yrdp4bQHXrgtyR+KE3onJg+8gc/ZLZM6ex8S+Q0ho7HLhwW7RXK4pUOzZ9YbceT5n6EFSS2FCY59/8wnSjox8eKTaNMeWINCnk3sYSeoojHpDYI+fAnvyNEa9A0iorfLgN2uQbFO7awqAYdYUqb6EVHhO58RYMIw75crf+0ClgjE/A1YElwxPFmNN1kdrCsx/BSp4TOoxkNVRYE+cXjQLpT78BEmFWRJ8qo1EqlV9hlhqeCe9ibcFbtULL/b5tNaB+GtvLhKIHziClAguAT7Zqq7eaFF1LllgXsIW+ELKGTajpRBVWcB9+jlm8zxm+QK4M+cwLk6T0t48Ei3Ki0S9KTsCG3iLvyDlDJsh7ZhUWjDSacLITiPindLhky3KqfSmna2ElOTN3lcknWFldpvUArwKiWbFYUJOeLP3q/8KPtmsuCT7nlS89s51eX5Ycfgm5bVYk6L++6B/SsFqXZ8zuH9aOXjFb1yTdiPRyCRJem1W5/pm2Wu+SXl5vJV8iliOiPWY0zsOZDXUVMPhm1W3Ek2Kt5d0dSI3rM7VkiFtFzNqW7UR8IkW5ffJJnIbsdLhlHZFRmE+l1GYK/XDq6dTLeoLN5rJ2nc9yy7Sbl3HdXT1p3eYTnEdpl/YdmPxfvjUFo3AbtFcSW0mP0u0qYb45arzRoXt7Hw8vUO/IbONfJprb1/XsAevZjVEQ/MnF7GrGBH1TbgAAAAASUVORK5CYII=" 
+                                    alt="Advertencia" class="warning-icon">
+                                    *Solo números. Min 7 - Max 10 
+                                </div>
+                            </div>
+                            <div class="row mb-3 form-group">
+                                <label for="fecha-nacimiento">Fecha de Nacimiento*</label>
+                                <input type="date" class="form-control" id="fecha-nacimiento" name="fecha-nacimiento" placeholder="DD-MM-AA" required>
+                                <div class="invalid-feedback">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFb0lEQVR4nO2YW2xTdRzHjxJviMobqAm7AcIG6+X0vvV62vV22o11Z2uHxHjhwUBCFIh4CcbEB4kCxkCMCUpCUHmRxAeivBo10ZCgvBB3adfR9vT0ctqelm0w1q85I87AjF3P6aYP+yb/15PP55zf+f1//z9BrGY1q2lIKj5mYznARATf0EeCj7kkeJkrgndgTHAPjAue0JWSO/Rd0dV/suTu33PTwTxL/B8Cml4r+MN7y3T4R4Eeqpb9Qyj7ByH4GAheBoJnYH6V3CGUevrvLtcuFJ19KDh6fy06AvuzpuATKw/OMA9XgpHDAh3myoEwyrQIvnT4IiWuXhQdQfD2IM/b6KOTBuaxFYGf6osYK8Hw9XIgArnwBbu4AijYAuCt/mihm6aWFb7SO3yoHIzMNhq+YKXBW/zIW3xzebP3PRDEAw0FFx9Y6R0+XgmK4MsDz4vL7APf7UWuy30eJPlQwwQqvcMfrxR8vsuDvMmNnKHnaxDvPigfPhg5stLweaMbeUMPcjrXB7LgheCwZTlrnv83eL0LWb2zmtFStCR4eDyPVAKRP6TAp+w0ohYfohYvomYPxrs9SFl9dcHn9E7kdBSyGipdUFjX1y1QCUaOSoHPU72YeH4v5qZn8FfmpqYRG3gBeau/PnitKOBAVm07URd8zrP7yTIdLkgpm7yjF5P7DuL+xF/ch5zFVz88aUdWZZvOqkzPLFmgTEdel1rzvCOI+Mv7FwnEwi/dFagXXm1DRmUFpzS/v2QBgR76XeoPy9sDmNi9d5FAtG83cmavJPiM0gKu0xIHQdRuqyXv0FY53SZvCyA2sGeRwLgnhLxE+IxCFDCD7ezW1377/qFX5bRK8QtE6cHFAjYaORnw3M5upDtMb9Wuf//gWTl9nrcFEHUG76WvVjFicMqC53Z0geswfltbwDf4s9xNarSr5x7+uZkZjGodMuFNSLcbrtcuIS8Tl7vDjhldqN6eXRC4UyxhXBSQA99hRHq7sVJbwDPAyx0PogYX7gjlBYHbaQ7jWrs8+HYj2O2GKghmTQ2BUFHubBPVOzGbzS0IzMQmEdXYZMGntxvAbtOj5phd8oSScgezmIHCrRvJBYGp6yOIiQIy4dnntNM1S6jk7r8qd6qc0FOYHhlbELh59RomSJtMeB3Yrdp4bQHXrgtyR+KE3onJg+8gc/ZLZM6ex8S+Q0ho7HLhwW7RXK4pUOzZ9YbceT5n6EFSS2FCY59/8wnSjox8eKTaNMeWINCnk3sYSeoojHpDYI+fAnvyNEa9A0iorfLgN2uQbFO7awqAYdYUqb6EVHhO58RYMIw75crf+0ClgjE/A1YElwxPFmNN1kdrCsx/BSp4TOoxkNVRYE+cXjQLpT78BEmFWRJ8qo1EqlV9hlhqeCe9ibcFbtULL/b5tNaB+GtvLhKIHziClAguAT7Zqq7eaFF1LllgXsIW+ELKGTajpRBVWcB9+jlm8zxm+QK4M+cwLk6T0t48Ei3Ki0S9KTsCG3iLvyDlDJsh7ZhUWjDSacLITiPindLhky3KqfSmna2ElOTN3lcknWFldpvUArwKiWbFYUJOeLP3q/8KPtmsuCT7nlS89s51eX5Ycfgm5bVYk6L++6B/SsFqXZ8zuH9aOXjFb1yTdiPRyCRJem1W5/pm2Wu+SXl5vJV8iliOiPWY0zsOZDXUVMPhm1W3Ek2Kt5d0dSI3rM7VkiFtFzNqW7UR8IkW5ffJJnIbsdLhlHZFRmE+l1GYK/XDq6dTLeoLN5rJ2nc9yy7Sbl3HdXT1p3eYTnEdpl/YdmPxfvjUFo3AbtFcSW0mP0u0qYb45arzRoXt7Hw8vUO/IbONfJprb1/XsAevZjVEQ/MnF7GrGBH1TbgAAAAASUVORK5CYII=" 
+                                    alt="Advertencia" class="warning-icon">
+                                    *Ingrese su fecha de nacimiento 
+                                </div>
+                            </div>
+                        </div>
+                        <button id= "next1" class="submit-btn">Siguiente</button>
+                    </form>
+                    <!-- Formulario 2 -->
+                    <form id="form2" enctype="application/x-www-form-urlencoded" class="needs-validation" novalidate>
+                        <div class="col-md-12">
+                            <!-- Barra de progreso -->
+                            <div class="progress-container">
+                                <div class="label start" style="font-weight: normal; font-size: 10px; color: #FFFFFF;">Datos Personales</div>
+                                <div class="label middle" style="font-size: 10px; color: #FFFFFF;"><b>Contacto</b></div>
+                                <div class="label end" style="font-weight: normal; font-size: 10px; color: #FFFFFF;">Confirmación</div>
+                                <div class="progress">
+                                    <div id="progress-bar" class="progress-bar-success" role="progressbar" style="width: 50%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="circle start"></div>
+                                    <div class="circle middle2"></div>
+                                    <div class="circle end2"></div>
+                                </div>
+                            </div>
+                            <div class="row g-3 ">
+                                <h2 style="color: #FFFFFF" class=" fw-bold h2 mt-0  d-none d-md-block">Regístrate y participa.</h2>
+                                <h2 style="color: #FFFFFF; font-weight: 700" class=" fw-bold h2 mt-0  d-block d-md-none">Regístrate y participa.</h2>
+                            </div>
+                            <div class="row g-3">
+                                <p style="color: #FFFFFF">*Campos obligatorios</p>
+                            </div>
+                            <div class="row mb-3 form-group">
+                                <label for="email">Correo electrónico*</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                                <div class="invalid-feedback">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFb0lEQVR4nO2YW2xTdRzHjxJviMobqAm7AcIG6+X0vvV62vV22o11Z2uHxHjhwUBCFIh4CcbEB4kCxkCMCUpCUHmRxAeivBo10ZCgvBB3adfR9vT0ctqelm0w1q85I87AjF3P6aYP+yb/15PP55zf+f1//z9BrGY1q2lIKj5mYznARATf0EeCj7kkeJkrgndgTHAPjAue0JWSO/Rd0dV/suTu33PTwTxL/B8Cml4r+MN7y3T4R4Eeqpb9Qyj7ByH4GAheBoJnYH6V3CGUevrvLtcuFJ19KDh6fy06AvuzpuATKw/OMA9XgpHDAh3myoEwyrQIvnT4IiWuXhQdQfD2IM/b6KOTBuaxFYGf6osYK8Hw9XIgArnwBbu4AijYAuCt/mihm6aWFb7SO3yoHIzMNhq+YKXBW/zIW3xzebP3PRDEAw0FFx9Y6R0+XgmK4MsDz4vL7APf7UWuy30eJPlQwwQqvcMfrxR8vsuDvMmNnKHnaxDvPigfPhg5stLweaMbeUMPcjrXB7LgheCwZTlrnv83eL0LWb2zmtFStCR4eDyPVAKRP6TAp+w0ohYfohYvomYPxrs9SFl9dcHn9E7kdBSyGipdUFjX1y1QCUaOSoHPU72YeH4v5qZn8FfmpqYRG3gBeau/PnitKOBAVm07URd8zrP7yTIdLkgpm7yjF5P7DuL+xF/ch5zFVz88aUdWZZvOqkzPLFmgTEdel1rzvCOI+Mv7FwnEwi/dFagXXm1DRmUFpzS/v2QBgR76XeoPy9sDmNi9d5FAtG83cmavJPiM0gKu0xIHQdRuqyXv0FY53SZvCyA2sGeRwLgnhLxE+IxCFDCD7ezW1377/qFX5bRK8QtE6cHFAjYaORnw3M5upDtMb9Wuf//gWTl9nrcFEHUG76WvVjFicMqC53Z0geswfltbwDf4s9xNarSr5x7+uZkZjGodMuFNSLcbrtcuIS8Tl7vDjhldqN6eXRC4UyxhXBSQA99hRHq7sVJbwDPAyx0PogYX7gjlBYHbaQ7jWrs8+HYj2O2GKghmTQ2BUFHubBPVOzGbzS0IzMQmEdXYZMGntxvAbtOj5phd8oSScgezmIHCrRvJBYGp6yOIiQIy4dnntNM1S6jk7r8qd6qc0FOYHhlbELh59RomSJtMeB3Yrdp4bQHXrgtyR+KE3onJg+8gc/ZLZM6ex8S+Q0ho7HLhwW7RXK4pUOzZ9YbceT5n6EFSS2FCY59/8wnSjox8eKTaNMeWINCnk3sYSeoojHpDYI+fAnvyNEa9A0iorfLgN2uQbFO7awqAYdYUqb6EVHhO58RYMIw75crf+0ClgjE/A1YElwxPFmNN1kdrCsx/BSp4TOoxkNVRYE+cXjQLpT78BEmFWRJ8qo1EqlV9hlhqeCe9ibcFbtULL/b5tNaB+GtvLhKIHziClAguAT7Zqq7eaFF1LllgXsIW+ELKGTajpRBVWcB9+jlm8zxm+QK4M+cwLk6T0t48Ei3Ki0S9KTsCG3iLvyDlDJsh7ZhUWjDSacLITiPindLhky3KqfSmna2ElOTN3lcknWFldpvUArwKiWbFYUJOeLP3q/8KPtmsuCT7nlS89s51eX5Ycfgm5bVYk6L++6B/SsFqXZ8zuH9aOXjFb1yTdiPRyCRJem1W5/pm2Wu+SXl5vJV8iliOiPWY0zsOZDXUVMPhm1W3Ek2Kt5d0dSI3rM7VkiFtFzNqW7UR8IkW5ffJJnIbsdLhlHZFRmE+l1GYK/XDq6dTLeoLN5rJ2nc9yy7Sbl3HdXT1p3eYTnEdpl/YdmPxfvjUFo3AbtFcSW0mP0u0qYb45arzRoXt7Hw8vUO/IbONfJprb1/XsAevZjVEQ/MnF7GrGBH1TbgAAAAASUVORK5CYII=" 
+                                    alt="Advertencia" class="warning-icon">
+                                    Ingrese un correo electrónico válido
+                                </div>
+                            </div>
+                            <div class="row mb-3 form-group">
+                                <label for="telefono">Teléfono*</label>
+                                <input type="tel" class="form-control" id="telefono" name="telefono" pattern="[+0-9]{1,13}" minlength="10" maxlength="10"  placeholder="Teléfono" required>
+                                <div class="invalid-feedback">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFb0lEQVR4nO2YW2xTdRzHjxJviMobqAm7AcIG6+X0vvV62vV22o11Z2uHxHjhwUBCFIh4CcbEB4kCxkCMCUpCUHmRxAeivBo10ZCgvBB3adfR9vT0ctqelm0w1q85I87AjF3P6aYP+yb/15PP55zf+f1//z9BrGY1q2lIKj5mYznARATf0EeCj7kkeJkrgndgTHAPjAue0JWSO/Rd0dV/suTu33PTwTxL/B8Cml4r+MN7y3T4R4Eeqpb9Qyj7ByH4GAheBoJnYH6V3CGUevrvLtcuFJ19KDh6fy06AvuzpuATKw/OMA9XgpHDAh3myoEwyrQIvnT4IiWuXhQdQfD2IM/b6KOTBuaxFYGf6osYK8Hw9XIgArnwBbu4AijYAuCt/mihm6aWFb7SO3yoHIzMNhq+YKXBW/zIW3xzebP3PRDEAw0FFx9Y6R0+XgmK4MsDz4vL7APf7UWuy30eJPlQwwQqvcMfrxR8vsuDvMmNnKHnaxDvPigfPhg5stLweaMbeUMPcjrXB7LgheCwZTlrnv83eL0LWb2zmtFStCR4eDyPVAKRP6TAp+w0ohYfohYvomYPxrs9SFl9dcHn9E7kdBSyGipdUFjX1y1QCUaOSoHPU72YeH4v5qZn8FfmpqYRG3gBeau/PnitKOBAVm07URd8zrP7yTIdLkgpm7yjF5P7DuL+xF/ch5zFVz88aUdWZZvOqkzPLFmgTEdel1rzvCOI+Mv7FwnEwi/dFagXXm1DRmUFpzS/v2QBgR76XeoPy9sDmNi9d5FAtG83cmavJPiM0gKu0xIHQdRuqyXv0FY53SZvCyA2sGeRwLgnhLxE+IxCFDCD7ezW1377/qFX5bRK8QtE6cHFAjYaORnw3M5upDtMb9Wuf//gWTl9nrcFEHUG76WvVjFicMqC53Z0geswfltbwDf4s9xNarSr5x7+uZkZjGodMuFNSLcbrtcuIS8Tl7vDjhldqN6eXRC4UyxhXBSQA99hRHq7sVJbwDPAyx0PogYX7gjlBYHbaQ7jWrs8+HYj2O2GKghmTQ2BUFHubBPVOzGbzS0IzMQmEdXYZMGntxvAbtOj5phd8oSScgezmIHCrRvJBYGp6yOIiQIy4dnntNM1S6jk7r8qd6qc0FOYHhlbELh59RomSJtMeB3Yrdp4bQHXrgtyR+KE3onJg+8gc/ZLZM6ex8S+Q0ho7HLhwW7RXK4pUOzZ9YbceT5n6EFSS2FCY59/8wnSjox8eKTaNMeWINCnk3sYSeoojHpDYI+fAnvyNEa9A0iorfLgN2uQbFO7awqAYdYUqb6EVHhO58RYMIw75crf+0ClgjE/A1YElwxPFmNN1kdrCsx/BSp4TOoxkNVRYE+cXjQLpT78BEmFWRJ8qo1EqlV9hlhqeCe9ibcFbtULL/b5tNaB+GtvLhKIHziClAguAT7Zqq7eaFF1LllgXsIW+ELKGTajpRBVWcB9+jlm8zxm+QK4M+cwLk6T0t48Ei3Ki0S9KTsCG3iLvyDlDJsh7ZhUWjDSacLITiPindLhky3KqfSmna2ElOTN3lcknWFldpvUArwKiWbFYUJOeLP3q/8KPtmsuCT7nlS89s51eX5Ycfgm5bVYk6L++6B/SsFqXZ8zuH9aOXjFb1yTdiPRyCRJem1W5/pm2Wu+SXl5vJV8iliOiPWY0zsOZDXUVMPhm1W3Ek2Kt5d0dSI3rM7VkiFtFzNqW7UR8IkW5ffJJnIbsdLhlHZFRmE+l1GYK/XDq6dTLeoLN5rJ2nc9yy7Sbl3HdXT1p3eYTnEdpl/YdmPxfvjUFo3AbtFcSW0mP0u0qYb45arzRoXt7Hw8vUO/IbONfJprb1/XsAevZjVEQ/MnF7GrGBH1TbgAAAAASUVORK5CYII=" 
+                                    alt="Advertencia" class="warning-icon">
+                                    Ingrese un número de teléfono válido
+                                </div>
+                            </div>
+                            <div class="row mb-3 form-group">
+                                <label for="instagram">Usuario de Instagram*</label>
+                                <input type="text" class="form-control" id="instagram" name="instagram" placeholder="@usuario" required>
+                                <div class="invalid-feedback">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFb0lEQVR4nO2YW2xTdRzHjxJviMobqAm7AcIG6+X0vvV62vV22o11Z2uHxHjhwUBCFIh4CcbEB4kCxkCMCUpCUHmRxAeivBo10ZCgvBB3adfR9vT0ctqelm0w1q85I87AjF3P6aYP+yb/15PP55zf+f1//z9BrGY1q2lIKj5mYznARATf0EeCj7kkeJkrgndgTHAPjAue0JWSO/Rd0dV/suTu33PTwTxL/B8Cml4r+MN7y3T4R4Eeqpb9Qyj7ByH4GAheBoJnYH6V3CGUevrvLtcuFJ19KDh6fy06AvuzpuATKw/OMA9XgpHDAh3myoEwyrQIvnT4IiWuXhQdQfD2IM/b6KOTBuaxFYGf6osYK8Hw9XIgArnwBbu4AijYAuCt/mihm6aWFb7SO3yoHIzMNhq+YKXBW/zIW3xzebP3PRDEAw0FFx9Y6R0+XgmK4MsDz4vL7APf7UWuy30eJPlQwwQqvcMfrxR8vsuDvMmNnKHnaxDvPigfPhg5stLweaMbeUMPcjrXB7LgheCwZTlrnv83eL0LWb2zmtFStCR4eDyPVAKRP6TAp+w0ohYfohYvomYPxrs9SFl9dcHn9E7kdBSyGipdUFjX1y1QCUaOSoHPU72YeH4v5qZn8FfmpqYRG3gBeau/PnitKOBAVm07URd8zrP7yTIdLkgpm7yjF5P7DuL+xF/ch5zFVz88aUdWZZvOqkzPLFmgTEdel1rzvCOI+Mv7FwnEwi/dFagXXm1DRmUFpzS/v2QBgR76XeoPy9sDmNi9d5FAtG83cmavJPiM0gKu0xIHQdRuqyXv0FY53SZvCyA2sGeRwLgnhLxE+IxCFDCD7ezW1377/qFX5bRK8QtE6cHFAjYaORnw3M5upDtMb9Wuf//gWTl9nrcFEHUG76WvVjFicMqC53Z0geswfltbwDf4s9xNarSr5x7+uZkZjGodMuFNSLcbrtcuIS8Tl7vDjhldqN6eXRC4UyxhXBSQA99hRHq7sVJbwDPAyx0PogYX7gjlBYHbaQ7jWrs8+HYj2O2GKghmTQ2BUFHubBPVOzGbzS0IzMQmEdXYZMGntxvAbtOj5phd8oSScgezmIHCrRvJBYGp6yOIiQIy4dnntNM1S6jk7r8qd6qc0FOYHhlbELh59RomSJtMeB3Yrdp4bQHXrgtyR+KE3onJg+8gc/ZLZM6ex8S+Q0ho7HLhwW7RXK4pUOzZ9YbceT5n6EFSS2FCY59/8wnSjox8eKTaNMeWINCnk3sYSeoojHpDYI+fAnvyNEa9A0iorfLgN2uQbFO7awqAYdYUqb6EVHhO58RYMIw75crf+0ClgjE/A1YElwxPFmNN1kdrCsx/BSp4TOoxkNVRYE+cXjQLpT78BEmFWRJ8qo1EqlV9hlhqeCe9ibcFbtULL/b5tNaB+GtvLhKIHziClAguAT7Zqq7eaFF1LllgXsIW+ELKGTajpRBVWcB9+jlm8zxm+QK4M+cwLk6T0t48Ei3Ki0S9KTsCG3iLvyDlDJsh7ZhUWjDSacLITiPindLhky3KqfSmna2ElOTN3lcknWFldpvUArwKiWbFYUJOeLP3q/8KPtmsuCT7nlS89s51eX5Ycfgm5bVYk6L++6B/SsFqXZ8zuH9aOXjFb1yTdiPRyCRJem1W5/pm2Wu+SXl5vJV8iliOiPWY0zsOZDXUVMPhm1W3Ek2Kt5d0dSI3rM7VkiFtFzNqW7UR8IkW5ffJJnIbsdLhlHZFRmE+l1GYK/XDq6dTLeoLN5rJ2nc9yy7Sbl3HdXT1p3eYTnEdpl/YdmPxfvjUFo3AbtFcSW0mP0u0qYb45arzRoXt7Hw8vUO/IbONfJprb1/XsAevZjVEQ/MnF7GrGBH1TbgAAAAASUVORK5CYII=" 
+                                    alt="Advertencia" class="warning-icon">
+                                    Ingrese un usuario de instagram valido
+                                </div>
+                            </div>
+                        </div>
+                        <button id="back" class="submit-btn" >Regresar</button>
+                        <button id="complete" class="submit-btn">Completar registro</button>
+                    </form>
+                    <!-- Campos adicionales de la ultima  -->
+                    <div class="col-md-12">
+                        <div id="confirmation" class="form-container" style="display: none;">
+                            <!-- Barra de progreso -->
+                            <div class="progress-container">
+                                <div class="progress">
+                                    <div class="label startf" style="font-weight: normal; font-size: 10px; color: #FFFFFF;">Datos Personales</div>
+                                    <div class="label middlef" style="font-weight: normal; font-size: 10px; color: #FFFFFF;">Contacto</div>
+                                    <div class="label endf" style="font-size: 10px; color: #FFFFFF;"><b>Confirmación</b></div>
+                                    <div id="progress-bar" class="progress-bar-success" role="progressbar" style="width: 100%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="circle start"></div>
+                                    <div class="circle middle"></div>
+                                    <div class="circle end3"></div>
+                                </div>
+                            </div>   
+                            <h2><span id="confirmationMessage">[Nombre de usuario]</span>, ya estás por terminar!</h2>
+                            <p style="font-size: 16px;"><b>Revisa tu bandeja de entrada de correos</b>, da clic en el botón de <b>verificar</b> que encontrarás en el correo para que dirección de correo electrónico quede verificada y tu registro quedará registrado.</p>
+                        </div>
+                    </div>
+                    <!-- Campos adicionales luego de verificar el correo  -->
+                    <div class="col-md-12">
+                        <div id="confirmation2" class="form-container" style="display: none;">
+                            <img src="./img/visto.svg" alt="Check Verde" class="check-imagen">
+                            <h1 style="font-size:4em; ">¡<span id="confirmationMessage">[Nombre de usuario]</span>, ya estás registrado!</h1>
+                            <p style="font-size:16px; "><strong>¿Quieres más oportunidades para participar?</strong><br>
+                            Síguenos en nuestra cuenta de Instagram</p>
+                            <a  href="https://www.instagram.com" class="instagram-button">
+                                @primaxec
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="main-footer">
+            <div class="footer-left">
+                <p>Todos los derechos reservados 2024 - <a href="" target="_blank"><u>Lee nuestros términos y condiciones de la promoción</u></a></p>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i>
+                <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.spotify.com" target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/language/es_ES.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="functions.js"></script>
+</body>
+</html>
+
+CSS
+
+@font-face {
+    font-family: 'NeoSansStdBold';
+    src: url('fonts/NeoSansStd-Bold.woff2') format('woff2'),
+         url('fonts/NeoSansStd-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: optional;
+}
+
+@font-face {
+    font-family: 'NeoSansStdExtraBold';
+    src: url('fonts/NeoSansStd-ExtraBold.woff2') format('woff2'),
+         url('fonts/NeoSansStd-ExtraBold.woff') format('woff');
+    font-weight: extra-bold;
+    font-style: normal;
+    font-display: optional;
+}
+
+@font-face {
+    font-family: 'NeoSansStdRegular';
+    src: url('fonts/NeoSansStd-Regular.woff2') format('woff2'),
+         url('fonts/NeoSansStd-Regular.woff') format('woff'),
+         url('fonts/NeoSansStd-Regular.ttf') format('truetype'),
+         url('fonts/NeoSansStd-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: optional;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Neo Sans Std', sans-serif !important;
+    color: #666;
+    /*background: #f2f2f2;*/ 
+    font-size: 1em;
+    line-height: 1.5em;
+    background-image: url("img/fondo 1.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h1, h2, h3 {
+    font-family: 'NeoSansStdBold', sans-serif;
+}
+
+strong {
+    font-family: 'NeoSansStdExtraBold', sans-serif;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+#main-header {
+    /* background: #3E3E3E; */
+    color: white;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}   
+
+#main-header img {
+    margin-right: 5%; /* Ajusta este valor según tus necesidades */
+    width: 200px;
+    /*height: 150px;*/
+}
+#main-header a {
+    color: white;
+    }
+
+    /*#header {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente 
+        align-items: center;    /* Centra verticalmente 
+        height: 100px;          /* Ajusta la altura del header según tus necesidades 
+    }*/
+    
+/* #logo-header {
+        padding: 0;
+        text-align: center;
+    }
+    
+    #logo-header img {
+        max-height: 100%;       /* Asegúrate de que la imagen no se salga del header 
+    }*/
+
+h2 {
+    font-size: 30px !important;
+    /*text-align: center;*/
+}
+nav {
+    float: right;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 20px;
+}
+    
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+            
+nav ul li a {
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+
+/*Pie de Página*/
+#main-footer {
+    background: #F37D2B;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    display: flex;
+    height: 80px;
+    justify-content: space-between; /* Distribuir los elementos de manera equitativa */
+    flex-shrink: 0;
+}
+
+.card {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.formulario .card-body{
+    margin: auto;
+    background-color: #ffffff;
+    /*z-index: -9;*/
+    border-radius: 20px 20px 20px 20px;
+    /*display:inline-block;*/
+    vertical-align: top;
+}
+.formulario .card-body-l, .formulario .card-body-r{
+    display:inline-block;
+    width:210px;
+}
+.card{
+    background:transparent;
+    border:none;
+}
+/* #main-footer */
+.footer-left,
+#main-footer .footer-right {
+    flex: 1; /* Hacer que cada división ocupe la mitad del ancho del contenedor */
+    padding: 10px; /* Añadir un poco de padding interno */
+    display: flex; /* Hacer que los contenedores sean flexibles */
+    align-items: center; /* Alinear verticalmente al centro */
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#main-footer .footer-left {
+    justify-content: flex-start; /* Mueve el contenido a la izquierda */
+}
+
+#main-footer .footer-right {
+    justify-content: flex-end; /* Mueve los iconos a la derecha */
+}
+/* #main-footer */
+.footer-right a {
+    color: #333333;
+    margin: 0 20px;
+    /*padding: 27px 0 0 20px;*/
+    text-decoration: none;
+    font-size: 24px; /* Tamaño del icono */
+}
+
+#main-footer p {
+    margin: 0;
+    font-size: 12px;
+}
+
+#main-footer a {
+    color: #FFFFFF;
+}
+
+
+
+/* Estilos de la nueva sección */
+#main-section {
+    display: flex;
+    flex: 1; /* Para que esta sección ocupe todo el espacio disponible */
+    height: calc(100vh - 160px); /* Igual a la altura del header y footer */
+    /* background-color: #F3F3F3; */
+}
+
+/*#main-section .section-left{
+    /* background-color: #8C8C8C; 
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main-section .section-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container .first-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.image-container .second-image {
+    margin-top: 100px; /* Ajusta este valor para controlar la separación entre las dos imágenes
+}*/
+
+#main-section .section-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    position: relative;
+    margin-left: 30%;
+}
+
+.image-slide {
+    position: absolute;
+    top: -350px;
+    left: 50%;
+    transform: translateX(-50%);
+    /*opacity: 1;*/
+    transition: opacity 1s ease-in-out;
+}
+
+.image-slide.active-image {
+    /* Tus estilos específicos para la imagen */
+    opacity: 1; /* Por ejemplo, hacerla visible */
+    background-color: transparent;
+    z-index: 2;
+}
+.image-slide[alt="First Image"] {
+    top: -370px; /* Posición un poco más alta */
+    opacity: 1;
+}
+/* Ajustes para la imagen promocional */
+.image-slide[alt="Promotional Image"] {
+    top: -300px; /* Posición un poco más baja */
+    opacity: 1;
+}
+/*#unique-image {
+    z-index: 1;  Asegura que esté encima si ambas imágenes están en la misma posición 
+}*/
+/* Estilos para cambiar a la tercera imagen 
+.image-container.show-third .image-slide[alt="First Image"],
+.image-container.show-third .image-slide[alt="Promotional Image"] {
+    opacity: 0;  Oculta las dos primeras imágenes 
+}
+
+.image-container.show-third .image-slide.third-image {
+    opacity: 1;  Muestra la tercera imagen 
+}*/
+.image-container.show-third img:not([alt="Third Image"]) {
+    opacity: 0;
+}
+
+.image-container.show-third img[alt="Third Image"] {
+    opacity: 1;
+}
+#main-section .section-right {
+    flex: 1;
+    /* background-color: #FFFFFF; */
+}
+
+#unique-image{
+    top: -250px;
+}
+
+/*#main-section .section-left img {
+    text-align: center;
+    display: block;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;  justa la imagen para que cubra el contenedor sin deformarse.
+}*/
+
+
+/* Formulario */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario input {
+    margin-bottom: 1px;
+    
+}
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.1s ease, box-shadow 0.1s ease; /* Transiciones con duraciones especificadas */
+}
+
+button:hover {
+    background-color: #F37D2A;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+    transition-delay: 0.1s;  /*Retraso antes de comenzar la transición */
+}
+.invalid-feedback {
+    font-size: 14px !important;
+    text-align: left;
+}
+
+.invalid-feedback img.warning-icon {
+   /* margin-right: 8px;  Espacio entre el icono y el texto */
+    width: 16px; /* Ajusta el tamaño del icono */
+    height: 16px; /* Ajusta el tamaño del icono */
+    margin-left: 4px;
+}
+.text-header{
+    font-size: 36px;
+    /* margin-top: 25%; */
+}
+.registrate-aqui{
+    margin: 10px auto -16px auto;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bolder;
+    letter-spacing: 0px;
+    /*background-color: #8ed5ee; colo cuando llena el formulario*/
+    background-color: #333333; /*colo cuando llena el formulario*/
+    color: #161141;
+    /* max-width: 250px; */
+    border-radius: 17px 17px 0px 0px;
+    font-weight: 900;
+    line-height: 1.5rem;
+    padding: 25px 25px 35px 25px;
+}
+
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #F37D2A;
+    border-radius: 20px;
+    height: 50px;
+    font-size: 1.5rem;
+}
+
+
+.form-group input:hover,
+.form-group input:focus {
+    border-width: 2px solid #333333;
+}
+
+
+.submit-btn {
+    width: 49%;
+    padding: 10px 10px;
+    background-color: #91C4E1;
+    border: none;
+    border-radius: 20px;
+    cursor: not-allowed;
+    font-size: 1.5rem;
+    margin-top: 15px
+}
+#next1{
+    float: right;
+}
+#back {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    /* transition: border 0.3s ease; */
+    margin-right: 5px;
+}
+#back:hover {
+    border: 2px solid #FFFFFF !important; /* Borde de 2 píxeles con color azul al hacer hover */
+    box-shadow: none; /* Desactivar la sombra del hover en el botón con id 'back' */
+}
+
+/*#back,
+#complete {
+    flex: 1; /* Hace que los botones se expandan para ocupar todo el ancho del formulario 
+    padding: 10px; /* Ajusta el padding según tus necesidades 
+    box-sizing: border-box; /* Asegura que el padding no aumente el ancho del botón 
+    margin: 5px; /* Espacio entre los botones y el borde del contenedor 
+}*/
+/*#complete {
+    margin-left: 5px;  Espacio entre los botones
+} */
+.submit-btn:disabled {
+    background-color: #eee;
+}
+
+
+
+/*Hacer que el boton sea negro cuando este activo*/
+.active {
+    background-color: #F37D2A !important;
+    color: white;
+}
+
+
+/*Progress bar
+.progress {
+    position: relative;
+}*/
+
+.progress-container {
+    position: relative;
+    width: 500px; /* Ajusta el tamaño total de la barra de progreso aquí */
+    margin: 20px auto; /* Centra la barra de progreso horizontalmente */
+}
+
+.progress-bar {
+    width: 100%;
+    height: 15px;
+    background-color: #000;
+    z-index: 2;
+}
+
+.progress {
+    /*position: relative;*/
+    height: 20px; /* Ajusta la altura de la barra de progreso aquí */
+    background-color: #e0e0e0; /* Color de fondo de la barra de progreso */
+    border-radius: 10px; /* Hace que los bordes sean redondeados */
+    width: 100%; /* Asegura que la barra de progreso tome todo el ancho del contenedor */
+}
+
+.progress-bar-success {
+    height: 100%; /* Asegura que la barra de progreso tenga la misma altura que el contenedor */
+    /*background-color: #149100;  Color de la barra de progreso */
+    z-index: 1; /* Asegura que la barra de progreso esté debajo de los círculos */
+}
+
+.progress::before,
+.progress::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /*width: 20px;*/
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000;
+    z-index: 2;
+}
+
+.progress::before {
+    left: 50%;
+    margin-left: -6px; /* Half the width of the circle */
+}
+.progress::first {
+    left: 0;
+    margin-left: 6px; /* Half the width of the circle */
+}
+.progress::after {
+    right: 0;
+    margin-right: 0; /* Half the width of the circle */
+}
+
+/* labels */ 
+.label {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -25px;
+}
+.label.start {
+    left: -40px;
+    /* margin-top: -25px; */
+}
+.label.startf {
+    left: -40px;
+    margin-top: -25px;
+}
+.label.middle {
+    left: 46%;
+    transform: translateX(-50%); /* Center the circle */
+    margin-left: 0px;
+    /*margin-top: -25px;*/
+}
+.label.middlef {
+    left: 50%;
+    transform: translateX(-50%); /* Center the circle */
+    margin-left: 0px;
+    margin-top: -25px;
+}
+.label.end {
+    right: 20px;
+    /*margin-top: -20px;*/
+}
+.label.endf {
+    right: 20px;
+    margin-top: -20px;
+}
+/* circulos */
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #F37D2A;
+    position: absolute;
+    top: -5px;
+    z-index: 2;
+}  
+.circle.start {
+    left: 0;
+    margin-left: -1px;
+}
+.circle.start1 {
+    left: -1px;
+    background-color: #F37D2A;
+}
+
+.circle.middle {
+    left: 50%;
+    transform: translateX(-50%); /* Center the circle */
+}
+.circle.middle1 {
+    left: 50%;
+    transform: translateX(-50%); /* Center the circle */
+    background-color: #D9D9D9;
+}
+
+.circle.middle2 {
+    left: 50%;
+    transform: translateX(-50%); /* Center the circle */
+    background-color: #F37D2A;
+}
+
+.circle.end {
+    right: 0;
+}
+.circle.end1 {
+    right: 0;
+    background-color: #D9D9D9;
+}
+.circle.end2 {
+    right: 0;
+    background-color: #D9D9D9;
+}
+.circle.end3 {
+    right: 0;
+    background-color: #F37D2A;
+    margin-right: -1px;
+}
+/* boton instagram */
+.instagram-button {
+    background-color: #333333;
+    color: white;
+    padding: 10px 70px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none; /* Esto quita el subrayado del enlace */
+    display: inline-block; /* Esto hace que el enlace se comporte como un botón */
+}
+.check-imagen {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+/*@media only screen and (max-width: 992px) { 
+    .progress-container {
+        position: relative;
+        width: 500px !important;  Ajusta el tamaño total de la barra de progreso aquí 
+        margin: 20px auto;  Centra la barra de progreso horizontalmente 
+    }
+
+}*/
+/* Estilos para iPhone 11 y modelos más recientes */
+@media only screen and (max-width: 480px) {
+    .submit-btn {
+        width: 96%;
+        padding: 10px 2px;
+        display: inline-block;
+        margin-right: 2.3%;
+        margin-bottom: 10px;
+    }
+    .footer-right {
+        margin-bottom: 10px;
+        display: flex; /* Añadido */
+        justify-content: center; /* Añadido */
+        align-items: center; /* Añadido */
+        margin-left: 35px !important; 
+        margin-top: -10px;
+        order: -1;
+    }
+    .progress-container {
+        position: relative;
+        width: 300px !important;  /*Ajusta el tamaño total de la barra de progreso aquí*/ 
+        margin: 20px auto;  /*Centra la barra de progreso horizontalmente*/ 
+    }
+    .label.middle {
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: -9px !important;
+    margin-top: 0px;
+    }
+    .label.middlef {
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: -10px !important;
+    margin-top: 0px;
+    }
+    .label.end {
+    right: 25px !important;
+    margin-top: 0px !important;
+    }
+    .label.endf {
+    right: 25px !important;
+    margin-top: 0px !important;
+    }
+    .circle.start1 {
+    left: 0;
+    background-color: #F37D2A;
+    margin-top: 15px;
+    }
+    .circle.middle1 {
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #D9D9D9;
+    margin-top: 15px;
+    }
+    .circle.end1 {
+    right: 0;
+    background-color: #D9D9D9;
+    margin-top: 15px;
+    }
+    .circle.start {
+    left: 0;
+    margin-top: 15px;
+    margin-left: -1px;
+    }
+    .circle.middle2 {
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #149100;
+    margin-top: 15px;
+    }
+    .circle.end2 {
+    right: 0;
+    background-color: #D9D9D9;
+    margin-top: 15px;
+    }
+    .circle.middle {
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+    }
+    .circle.end3 {
+    right: 0;
+    background-color: #149100;
+    margin-top: 15px;
+    margin-right: -1px;
+    }
+    .label.start {
+    left: -20px;
+    margin-top: 0px; 
+    }
+    .label.startf {
+    left: -20px;
+    margin-top: 0px; 
+    }
+}
+
+/* Media Query para dispositivos móviles */
+@media (min-width: 768px) {
+    .submit-btn {
+        /*padding: 10px 60px;*/
+        background-color: #91C4E1;
+        border: none;
+        border-radius: 20px;
+        cursor: not-allowed;
+        font-size: 1.5rem;
+        /* width: 48%; */
+    }
+    .progress-container {
+        position: relative;
+        width: 400px !important;  /*Ajusta el tamaño total de la barra de progreso aquí*/ 
+        margin: 20px auto;  /*Centra la barra de progreso horizontalmente*/ 
+    }
+
+}
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+
+    .progress-container {
+        position: relative;
+        width: 450px !important;  /*Ajusta el tamaño total de la barra de progreso aquí*/ 
+        margin: 20px auto;  /*Centra la barra de progreso horizontalmente*/ 
+    }
+
+    #main-header {
+        text-align: center;
+        height: auto;
+        padding: 10px;
+        justify-content: center;
+    }
+    #main-header img {
+        margin-left: 0px;
+    }
+
+    #logo-header {
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        padding-right: 0;
+    }
+
+    nav ul li {
+        display: block;
+        line-height: initial;
+    }
+
+    #main-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #main-section .section-left,
+    #main-section .section-right {
+        /*flex: none;*/
+        /*width: 100%;*/
+        height: auto;
+    }
+
+    #main-section .section-left img {
+        width: 35%;
+        height: auto;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+    }
+    .form-control {
+        text-align: left; /* Asegura que el texto esté alineado a la izquierda en móviles */
+    }
+    .submit-btn {
+        width: 98%;
+        padding: 10px 11.9px;
+        display: inline-block;
+        margin-right: 2.3%;
+    }
+
+    h2 {
+        font-size: 26px !important;
+        text-align: center;
+    }
+
+    .text-header {
+        font-size: 24px;
+    }
+
+    .registrate-aqui {
+        font-size: 20px;
+        padding: 15px 15px 25px 15px;
+    }
+
+    /*.progress {
+        position: relative;
+        top:10px;
+    }*/
+
+    .progress-step {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .progress-bar {
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+    }
+    .progress {
+        margin-top: 15px !important;
+    }
+
+    .progress-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    /*top: -5px;*/
+    }
+    .circle.start1 {
+    left: 0;
+    background-color: #F37D2A;
+    margin-top:15px;
+    }
+    .circle.middle1 {
+    left: 50%;
+    transform: translateX(-50%); /* Center the circle */
+    background-color: #D9D9D9;
+    margin-top:15px; 
+    }
+    .circle.end1 {
+    right: 0;
+    background-color: #D9D9D9;
+    margin-top: 15px;
+    }
+    .circle.start {
+    left: 0;
+    margin-left: -1px;
+    margin-top: 15px;
+    }
+    .circle.middle2 {
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #F37D2A;
+    margin-top: 15px;
+    }
+    .circle.end2 {
+    right: 0;
+    background-color: #D9D9D9;
+    margin-top: 15px;
+    }
+    .circle.middle {
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+    }
+    .circle.end3 {
+    right: 0;
+    background-color: #F37D2A;
+    margin-right: -1px;
+    margin-top: 15px;
+    }
+    .label.middle {
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: -15px;
+    /* margin-top: -25px; */
+    }
+    .label.end {
+    right: 25px;
+    margin-top: 6px;
+    }
+    .section-right {
+        padding-left: 0px;
+    }
+    
+    /* Estilos específicos para el footer en dispositivos móviles */
+    #main-footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        /*padding: 0px 0;*/
+        height: 120px;
+    }
+    #main-footer p {
+        margin-top: -10px;
+        font-size:1.2rem;
+        margin-right: 30px;
+    }
+
+    .footer-left, .footer-right {
+        flex: 1;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .footer-right {
+        margin-bottom: 10px;
+        display: flex; /* Añadido */
+        justify-content: center; /* Añadido */
+        align-items: center; /* Añadido */
+        margin-left: 26px !important; 
+        margin-top: -10px;
+        order: -1;
+    }
+
+    .footer-right a {
+        /*margin: 0 41.5px;*/
+        display: flex; /* Añadido */
+        justify-content: center; /* Añadido */
+        align-items: center; /* Añadido */
+        margin-right: 12.5%;
+    }
+    .label {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: -10px;
+    }
+    .label.startf {
+        left: -20px;
+        margin-top: 0px;
+    }
+    .label.middlef {
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: 0px;
+        margin-top: 0px; 
+    }
+    .label.endf {
+        right: 20px;
+        margin-top: 0px; 
+    }
+    .instagram-button {
+        background-color: #333333;
+        color: white;
+        padding: 10px 115px;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .label.start {
+        /* left: 87px; */
+        /* margin-top: -25px; */
+    }
+    .label.middle {
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: -17px;
+        /* margin-top: -25px; */
+    }
+    .label.end {
+        /* right: 150px; */
+        /* margin-top: -20px; */
+    }
+    .label.startf {
+        /* left: 87px; */
+        margin-top: 0px;
+    }
+    .label.middlef {
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: -17px;
+        margin-top: 0px;
+    }
+    .label.endf {
+        /* right: 150px; */
+        margin-top: 5px;
+    }
+    .submit-btn {
+        /* width: 49.5%; */
+    }
+}
+@media only screen and (max-width: 480px) {
+    .submit-btn{
+        /* width: 100%; */
+        padding: 10px 10.2px;
+        display: inline-block;
+        margin-right: 2.3%;
+        }
+}
+@media (min-width: 2560px) {
+    .submit-btn {
+        width: 49.55%;
+        /* padding: 10px 2%; */
+    }
+}
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper input {
+    padding-left: 30px; /* Ajusta el espacio para que el @ no se sobreponga al texto */
+}
+
+.input-wrapper::before {
+    content: "@";
+    position: absolute;
+    left: 10px; /* Ajusta la posición horizontal del @ */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d; /* Ajusta el color según tu diseño */
+    font-size: 1rem; /* Ajusta el tamaño del @ según tu diseño */
+}
+
+JS
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Obtener referencias a los elementos del formulario y otros elementos relevantes
+    var form1 = document.getElementById('formulariolanding');
+    var form2 = document.getElementById('form2');
+    var confirmation = document.getElementById('confirmation');
+    var next1 = document.getElementById('next1');
+    var back = document.getElementById('back');
+    var complete = document.getElementById('complete');
+    var confirmationMessage = document.getElementById('confirmationMessage');
+    var instagramField = document.getElementById('form_nombre');
+    var progressBar = document.getElementById('progress-bar');
+    var instagramInput = document.getElementById('instagram');
+    var fechaNacimientoInput = document.getElementById('fecha-nacimiento');
+
+    // Función para asegurarse de que el campo de entrada tenga un "@" al obtener el foco si el valor no comienza con él.
+    function setInitialValue() {
+        if (!instagramInput.value.startsWith('@')) {
+            instagramInput.value = '@';
+        }
+    }
+
+    // Función que se activa cada vez que el usuario escribe en el campo.
+    function handleInputChange(e) {
+        var input = e.target;
+        if (!input.value.startsWith('@')) {
+            input.value = '@' + input.value.replace(/^@*/, '');
+        }
+    }
+
+    // Función que previene que el usuario borre el "@" al presionar la tecla de retroceso cuando el cursor está justo después del "@".
+    function preventRemovalOfAt(e) {
+        if (e.target.selectionStart === 1 && e.key === "Backspace") {
+            e.preventDefault();
+        }
+    }
+
+    // Agregar los event listeners al campo de entrada de Instagram
+    if (instagramInput) {
+        instagramInput.addEventListener('focus', setInitialValue);
+        instagramInput.addEventListener('input', handleInputChange);
+        instagramInput.addEventListener('keydown', preventRemovalOfAt);
+    }
+
+    // Validación de la fecha de nacimiento
+    function validateAge() {
+        const fechaNacimiento = fechaNacimientoInput.value;
+        const fechaNacimientoDate = new Date(fechaNacimiento);
+        const hoy = new Date();
+        let edad = hoy.getFullYear() - fechaNacimientoDate.getFullYear();
+        const mes = hoy.getMonth() - fechaNacimientoDate.getMonth();
+
+        if (mes < 0 || (mes === 0 && hoy.getDate() < fechaNacimientoDate.getDate())) {
+            edad--;
+        }
+
+        if (edad < 18) {
+            fechaNacimientoInput.classList.add('is-invalid');
+            return false;
+        } else {
+            fechaNacimientoInput.classList.remove('is-invalid');
+            return true;
+        }
+    }
+
+    // Función para verificar la validez del formulario y actualizar el estado del botón 'complete'
+    function updateCompleteButtonState() {
+        if (form2.checkValidity()) {
+            complete.classList.add('active');
+        } else {
+            complete.classList.remove('active');
+        }
+        // Verificar el estado del botón 'next1'
+        if (form1.checkValidity()) {
+            next1.classList.add('active');
+        } else {
+            next1.classList.remove('active');
+        }
+    }
+
+    function capitalizeFirstLetter(string) {
+        if (!string) return ''; // Asegúrate de que la cadena no esté vacía
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
+    next1.addEventListener('click', function(event) {
+        event.preventDefault(); // Previene la recarga de la página
+        if (form1.checkValidity() === false || !validateAge()) {
+            event.stopPropagation();
+            form1.classList.add('was-validated');
+        } else {
+            form1.style.display = 'none';
+            form2.style.display = 'block';
+            // Actualizar la barra de progreso al 50%
+            progressBar.style.width = '50%';
+            progressBar.textContent = '';
+            // Verificar el estado del botón 'complete'
+            updateCompleteButtonState();
+        }
+    });
+
+    back.addEventListener('click', function(event) {
+        event.preventDefault(); // Previene la recarga de la página
+        form2.style.display = 'none';
+        form1.style.display = 'block';
+        progressBar.style.width = '0%';
+        progressBar.textContent = '';
+        /*next1.classList.add('active');*/
+    });
+
+    complete.addEventListener('click', function(event) {
+        event.preventDefault(); // Previene la recarga de la página
+        if (form2.checkValidity() === false) {
+            event.stopPropagation();
+            form2.classList.add('was-validated');
+        } else {
+            var instagramUser = instagramField.value;
+            instagramUser = capitalizeFirstLetter(instagramUser);
+            confirmationMessage.textContent = instagramUser;
+            form2.style.display = 'none';
+            confirmation.style.display = 'block';
+            // Actualizar la barra de progreso al 100%
+            progressBar.style.width = '100%';
+            progressBar.textContent = '';
+        }
+    });
+
+    // Agregar un event listener para verificar el estado del botón cada vez que el usuario ingresa datos en el formulario
+    form1.addEventListener('input', updateCompleteButtonState);
+    form2.addEventListener('input', updateCompleteButtonState);
+
+    // Código para cambiar las imágenes cada 5 segundos
+    const images = document.querySelectorAll('.image-slide');
+    let currentImageIndex = 0;
+    const changeInterval = 5000; // 5000 milisegundos = 5 segundos
+
+    function changeImage() {
+        images[currentImageIndex].classList.remove('active-image');
+        document.querySelector('.image-container').classList.remove('show-third');
+
+        // Alternar entre la imagen compuesta y la tercera imagen
+        if (currentImageIndex === 1) {
+            currentImageIndex = 2; // Mostrar la tercera imagen
+            document.querySelector('.image-container').classList.add('show-third');
+        } else {
+            currentImageIndex = 0; // Volver a la imagen compuesta
+        }
+
+        images[currentImageIndex].classList.add('active-image');
+    }
+
+    // Cambiar la imagen cada cierto tiempo
+    setInterval(changeImage, changeInterval);
+
+    // Iniciar mostrando la primera imagen
+    images[currentImageIndex].classList.add('active-image');
+});
