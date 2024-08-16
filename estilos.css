@@ -39,7 +39,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 h1, h2, h3 {
     font-family: 'NeoSansStdBold', sans-serif;
