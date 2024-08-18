@@ -712,6 +712,9 @@ button:hover {
     left: -45px !important;
     margin-top: 0px;
     }
+    .thanks{
+    margin-left: -12px;   
+    }
 }
 
 /* Media Query para dispositivos móviles */
