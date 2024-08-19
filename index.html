@@ -97,6 +97,7 @@
             .mt-0 {
                 margin-right: -50px;
             }
+
             input[type=checkbox], input[type=radio] {
                 box-sizing: border-box;
                 padding: 0;
@@ -123,11 +124,11 @@
             <section id="main-section">
                 <div class="section-left">
                     <div class="image-container">
-                        <img src="./img/imgU.svg" alt="First Image" id="first-image" class="image-slide active-image">
+                        <img src="./img/img_prin.svg" alt="First Image" id="first-image" class="image-slide active-image">
                         <img src="./img/duplicate_img.svg" alt="Promotional Image" id="unique-image" class="image-slide">
                         <!--<img src="./img/prueba1.svg" alt="Third Image" class="image-slide">-->
                         <!-- Imágenes para pantallas pequeñas -->
-                        <img src="./img/mobile1.svg" alt="Small Image 1" class="image-slide small-image">
+                        <img src="./img/mobile1.svg" alt="Small Image 1" id="mobile1" class="image-slide small-image">
                         <img src="./img/mobile3.svg" alt="Small Image 2" class="image-slide small-image">
                     </div>
                 </div>
@@ -151,8 +152,8 @@
                                     </div>
                                 </div>
                                 <div class="row g-3 ">
-                                    <h2 style="color: #FFFFFF" class=" fw-bold h2 mt-0  d-none d-md-block">Regístrate y participa</h2>
-                                    <h2 style="color: #FFFFFF; font-weight: 700" class=" fw-bold h2 mt-0  d-block d-md-none">Regístrate y participa</h2>
+                                    <h2 style="color: #FFFFFF" class=" fw-bold h2 mt-0  d-none d-md-block">Regístrate y Participa</h2>
+                                    <h2 style="color: #FFFFFF; font-weight: 700" class=" fw-bold h2 mt-0  d-block d-md-none">Regístrate y Participa</h2>
                                 </div>
                                 <div class="row g-3">
                                     <p style="font: size 12px; color: #FFFFFF">*Campos obligatorios</p>
@@ -163,6 +164,7 @@
                                     <div class="invalid-feedback">
                                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFb0lEQVR4nO2YW2xTdRzHjxJviMobqAm7AcIG6+X0vvV62vV22o11Z2uHxHjhwUBCFIh4CcbEB4kCxkCMCUpCUHmRxAeivBo10ZCgvBB3adfR9vT0ctqelm0w1q85I87AjF3P6aYP+yb/15PP55zf+f1//z9BrGY1q2lIKj5mYznARATf0EeCj7kkeJkrgndgTHAPjAue0JWSO/Rd0dV/suTu33PTwTxL/B8Cml4r+MN7y3T4R4Eeqpb9Qyj7ByH4GAheBoJnYH6V3CGUevrvLtcuFJ19KDh6fy06AvuzpuATKw/OMA9XgpHDAh3myoEwyrQIvnT4IiWuXhQdQfD2IM/b6KOTBuaxFYGf6osYK8Hw9XIgArnwBbu4AijYAuCt/mihm6aWFb7SO3yoHIzMNhq+YKXBW/zIW3xzebP3PRDEAw0FFx9Y6R0+XgmK4MsDz4vL7APf7UWuy30eJPlQwwQqvcMfrxR8vsuDvMmNnKHnaxDvPigfPhg5stLweaMbeUMPcjrXB7LgheCwZTlrnv83eL0LWb2zmtFStCR4eDyPVAKRP6TAp+w0ohYfohYvomYPxrs9SFl9dcHn9E7kdBSyGipdUFjX1y1QCUaOSoHPU72YeH4v5qZn8FfmpqYRG3gBeau/PnitKOBAVm07URd8zrP7yTIdLkgpm7yjF5P7DuL+xF/ch5zFVz88aUdWZZvOqkzPLFmgTEdel1rzvCOI+Mv7FwnEwi/dFagXXm1DRmUFpzS/v2QBgR76XeoPy9sDmNi9d5FAtG83cmavJPiM0gKu0xIHQdRuqyXv0FY53SZvCyA2sGeRwLgnhLxE+IxCFDCD7ezW1377/qFX5bRK8QtE6cHFAjYaORnw3M5upDtMb9Wuf//gWTl9nrcFEHUG76WvVjFicMqC53Z0geswfltbwDf4s9xNarSr5x7+uZkZjGodMuFNSLcbrtcuIS8Tl7vDjhldqN6eXRC4UyxhXBSQA99hRHq7sVJbwDPAyx0PogYX7gjlBYHbaQ7jWrs8+HYj2O2GKghmTQ2BUFHubBPVOzGbzS0IzMQmEdXYZMGntxvAbtOj5phd8oSScgezmIHCrRvJBYGp6yOIiQIy4dnntNM1S6jk7r8qd6qc0FOYHhlbELh59RomSJtMeB3Yrdp4bQHXrgtyR+KE3onJg+8gc/ZLZM6ex8S+Q0ho7HLhwW7RXK4pUOzZ9YbceT5n6EFSS2FCY59/8wnSjox8eKTaNMeWINCnk3sYSeoojHpDYI+fAnvyNEa9A0iorfLgN2uQbFO7awqAYdYUqb6EVHhO58RYMIw75crf+0ClgjE/A1YElwxPFmNN1kdrCsx/BSp4TOoxkNVRYE+cXjQLpT78BEmFWRJ8qo1EqlV9hlhqeCe9ibcFbtULL/b5tNaB+GtvLhKIHziClAguAT7Zqq7eaFF1LllgXsIW+ELKGTajpRBVWcB9+jlm8zxm+QK4M+cwLk6T0t48Ei3Ki0S9KTsCG3iLvyDlDJsh7ZhUWjDSacLITiPindLhky3KqfSmna2ElOTN3lcknWFldpvUArwKiWbFYUJOeLP3q/8KPtmsuCT7nlS89s51eX5Ycfgm5bVYk6L++6B/SsFqXZ8zuH9aOXjFb1yTdiPRyCRJem1W5/pm2Wu+SXl5vJV8iliOiPWY0zsOZDXUVMPhm1W3Ek2Kt5d0dSI3rM7VkiFtFzNqW7UR8IkW5ffJJnIbsdLhlHZFRmE+l1GYK/XDq6dTLeoLN5rJ2nc9yy7Sbl3HdXT1p3eYTnEdpl/YdmPxfvjUFo3AbtFcSW0mP0u0qYb45arzRoXt7Hw8vUO/IbONfJprb1/XsAevZjVEQ/MnF7GrGBH1TbgAAAAASUVORK5CYII=" alt="Advertencia" class="warning-icon">*Ingrese su nombre 
                                 
+                                    
                                     </div>
                                 </div>
                                 <div class="row mb-3 form-group">
@@ -171,6 +173,7 @@
                                     <div class="invalid-feedback">
                                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFb0lEQVR4nO2YW2xTdRzHjxJviMobqAm7AcIG6+X0vvV62vV22o11Z2uHxHjhwUBCFIh4CcbEB4kCxkCMCUpCUHmRxAeivBo10ZCgvBB3adfR9vT0ctqelm0w1q85I87AjF3P6aYP+yb/15PP55zf+f1//z9BrGY1q2lIKj5mYznARATf0EeCj7kkeJkrgndgTHAPjAue0JWSO/Rd0dV/suTu33PTwTxL/B8Cml4r+MN7y3T4R4Eeqpb9Qyj7ByH4GAheBoJnYH6V3CGUevrvLtcuFJ19KDh6fy06AvuzpuATKw/OMA9XgpHDAh3myoEwyrQIvnT4IiWuXhQdQfD2IM/b6KOTBuaxFYGf6osYK8Hw9XIgArnwBbu4AijYAuCt/mihm6aWFb7SO3yoHIzMNhq+YKXBW/zIW3xzebP3PRDEAw0FFx9Y6R0+XgmK4MsDz4vL7APf7UWuy30eJPlQwwQqvcMfrxR8vsuDvMmNnKHnaxDvPigfPhg5stLweaMbeUMPcjrXB7LgheCwZTlrnv83eL0LWb2zmtFStCR4eDyPVAKRP6TAp+w0ohYfohYvomYPxrs9SFl9dcHn9E7kdBSyGipdUFjX1y1QCUaOSoHPU72YeH4v5qZn8FfmpqYRG3gBeau/PnitKOBAVm07URd8zrP7yTIdLkgpm7yjF5P7DuL+xF/ch5zFVz88aUdWZZvOqkzPLFmgTEdel1rzvCOI+Mv7FwnEwi/dFagXXm1DRmUFpzS/v2QBgR76XeoPy9sDmNi9d5FAtG83cmavJPiM0gKu0xIHQdRuqyXv0FY53SZvCyA2sGeRwLgnhLxE+IxCFDCD7ezW1377/qFX5bRK8QtE6cHFAjYaORnw3M5upDtMb9Wuf//gWTl9nrcFEHUG76WvVjFicMqC53Z0geswfltbwDf4s9xNarSr5x7+uZkZjGodMuFNSLcbrtcuIS8Tl7vDjhldqN6eXRC4UyxhXBSQA99hRHq7sVJbwDPAyx0PogYX7gjlBYHbaQ7jWrs8+HYj2O2GKghmTQ2BUFHubBPVOzGbzS0IzMQmEdXYZMGntxvAbtOj5phd8oSScgezmIHCrRvJBYGp6yOIiQIy4dnntNM1S6jk7r8qd6qc0FOYHhlbELh59RomSJtMeB3Yrdp4bQHXrgtyR+KE3onJg+8gc/ZLZM6ex8S+Q0ho7HLhwW7RXK4pUOzZ9YbceT5n6EFSS2FCY59/8wnSjox8eKTaNMeWINCnk3sYSeoojHpDYI+fAnvyNEa9A0iorfLgN2uQbFO7awqAYdYUqb6EVHhO58RYMIw75crf+0ClgjE/A1YElwxPFmNN1kdrCsx/BSp4TOoxkNVRYE+cXjQLpT78BEmFWRJ8qo1EqlV9hlhqeCe9ibcFbtULL/b5tNaB+GtvLhKIHziClAguAT7Zqq7eaFF1LllgXsIW+ELKGTajpRBVWcB9+jlm8zxm+QK4M+cwLk6T0t48Ei3Ki0S9KTsCG3iLvyDlDJsh7ZhUWjDSacLITiPindLhky3KqfSmna2ElOTN3lcknWFldpvUArwKiWbFYUJOeLP3q/8KPtmsuCT7nlS89s51eX5Ycfgm5bVYk6L++6B/SsFqXZ8zuH9aOXjFb1yTdiPRyCRJem1W5/pm2Wu+SXl5vJV8iliOiPWY0zsOZDXUVMPhm1W3Ek2Kt5d0dSI3rM7VkiFtFzNqW7UR8IkW5ffJJnIbsdLhlHZFRmE+l1GYK/XDq6dTLeoLN5rJ2nc9yy7Sbl3HdXT1p3eYTnEdpl/YdmPxfvjUFo3AbtFcSW0mP0u0qYb45arzRoXt7Hw8vUO/IbONfJprb1/XsAevZjVEQ/MnF7GrGBH1TbgAAAAASUVORK5CYII=" alt="Advertencia" class="warning-icon">*Ingrese su apellido 
                                 
+                                    
                                     </div>
                                 </div>
                                 <div class="row mb-3 form-group" id="box_cedula">
@@ -179,6 +182,7 @@
                                     <div class="invalid-feedback">
                                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFb0lEQVR4nO2YW2xTdRzHjxJviMobqAm7AcIG6+X0vvV62vV22o11Z2uHxHjhwUBCFIh4CcbEB4kCxkCMCUpCUHmRxAeivBo10ZCgvBB3adfR9vT0ctqelm0w1q85I87AjF3P6aYP+yb/15PP55zf+f1//z9BrGY1q2lIKj5mYznARATf0EeCj7kkeJkrgndgTHAPjAue0JWSO/Rd0dV/suTu33PTwTxL/B8Cml4r+MN7y3T4R4Eeqpb9Qyj7ByH4GAheBoJnYH6V3CGUevrvLtcuFJ19KDh6fy06AvuzpuATKw/OMA9XgpHDAh3myoEwyrQIvnT4IiWuXhQdQfD2IM/b6KOTBuaxFYGf6osYK8Hw9XIgArnwBbu4AijYAuCt/mihm6aWFb7SO3yoHIzMNhq+YKXBW/zIW3xzebP3PRDEAw0FFx9Y6R0+XgmK4MsDz4vL7APf7UWuy30eJPlQwwQqvcMfrxR8vsuDvMmNnKHnaxDvPigfPhg5stLweaMbeUMPcjrXB7LgheCwZTlrnv83eL0LWb2zmtFStCR4eDyPVAKRP6TAp+w0ohYfohYvomYPxrs9SFl9dcHn9E7kdBSyGipdUFjX1y1QCUaOSoHPU72YeH4v5qZn8FfmpqYRG3gBeau/PnitKOBAVm07URd8zrP7yTIdLkgpm7yjF5P7DuL+xF/ch5zFVz88aUdWZZvOqkzPLFmgTEdel1rzvCOI+Mv7FwnEwi/dFagXXm1DRmUFpzS/v2QBgR76XeoPy9sDmNi9d5FAtG83cmavJPiM0gKu0xIHQdRuqyXv0FY53SZvCyA2sGeRwLgnhLxE+IxCFDCD7ezW1377/qFX5bRK8QtE6cHFAjYaORnw3M5upDtMb9Wuf//gWTl9nrcFEHUG76WvVjFicMqC53Z0geswfltbwDf4s9xNarSr5x7+uZkZjGodMuFNSLcbrtcuIS8Tl7vDjhldqN6eXRC4UyxhXBSQA99hRHq7sVJbwDPAyx0PogYX7gjlBYHbaQ7jWrs8+HYj2O2GKghmTQ2BUFHubBPVOzGbzS0IzMQmEdXYZMGntxvAbtOj5phd8oSScgezmIHCrRvJBYGp6yOIiQIy4dnntNM1S6jk7r8qd6qc0FOYHhlbELh59RomSJtMeB3Yrdp4bQHXrgtyR+KE3onJg+8gc/ZLZM6ex8S+Q0ho7HLhwW7RXK4pUOzZ9YbceT5n6EFSS2FCY59/8wnSjox8eKTaNMeWINCnk3sYSeoojHpDYI+fAnvyNEa9A0iorfLgN2uQbFO7awqAYdYUqb6EVHhO58RYMIw75crf+0ClgjE/A1YElwxPFmNN1kdrCsx/BSp4TOoxkNVRYE+cXjQLpT78BEmFWRJ8qo1EqlV9hlhqeCe9ibcFbtULL/b5tNaB+GtvLhKIHziClAguAT7Zqq7eaFF1LllgXsIW+ELKGTajpRBVWcB9+jlm8zxm+QK4M+cwLk6T0t48Ei3Ki0S9KTsCG3iLvyDlDJsh7ZhUWjDSacLITiPindLhky3KqfSmna2ElOTN3lcknWFldpvUArwKiWbFYUJOeLP3q/8KPtmsuCT7nlS89s51eX5Ycfgm5bVYk6L++6B/SsFqXZ8zuH9aOXjFb1yTdiPRyCRJem1W5/pm2Wu+SXl5vJV8iliOiPWY0zsOZDXUVMPhm1W3Ek2Kt5d0dSI3rM7VkiFtFzNqW7UR8IkW5ffJJnIbsdLhlHZFRmE+l1GYK/XDq6dTLeoLN5rJ2nc9yy7Sbl3HdXT1p3eYTnEdpl/YdmPxfvjUFo3AbtFcSW0mP0u0qYb45arzRoXt7Hw8vUO/IbONfJprb1/XsAevZjVEQ/MnF7GrGBH1TbgAAAAASUVORK5CYII=" alt="Advertencia" class="warning-icon">*Solo números. Min 7 - Max 10 
                                 
+                                    
                                     </div>
                                 </div>
                                 <div class="row mb-3 form-group">
@@ -187,6 +191,7 @@
                                     <div class="invalid-feedback">
                                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFb0lEQVR4nO2YW2xTdRzHjxJviMobqAm7AcIG6+X0vvV62vV22o11Z2uHxHjhwUBCFIh4CcbEB4kCxkCMCUpCUHmRxAeivBo10ZCgvBB3adfR9vT0ctqelm0w1q85I87AjF3P6aYP+yb/15PP55zf+f1//z9BrGY1q2lIKj5mYznARATf0EeCj7kkeJkrgndgTHAPjAue0JWSO/Rd0dV/suTu33PTwTxL/B8Cml4r+MN7y3T4R4Eeqpb9Qyj7ByH4GAheBoJnYH6V3CGUevrvLtcuFJ19KDh6fy06AvuzpuATKw/OMA9XgpHDAh3myoEwyrQIvnT4IiWuXhQdQfD2IM/b6KOTBuaxFYGf6osYK8Hw9XIgArnwBbu4AijYAuCt/mihm6aWFb7SO3yoHIzMNhq+YKXBW/zIW3xzebP3PRDEAw0FFx9Y6R0+XgmK4MsDz4vL7APf7UWuy30eJPlQwwQqvcMfrxR8vsuDvMmNnKHnaxDvPigfPhg5stLweaMbeUMPcjrXB7LgheCwZTlrnv83eL0LWb2zmtFStCR4eDyPVAKRP6TAp+w0ohYfohYvomYPxrs9SFl9dcHn9E7kdBSyGipdUFjX1y1QCUaOSoHPU72YeH4v5qZn8FfmpqYRG3gBeau/PnitKOBAVm07URd8zrP7yTIdLkgpm7yjF5P7DuL+xF/ch5zFVz88aUdWZZvOqkzPLFmgTEdel1rzvCOI+Mv7FwnEwi/dFagXXm1DRmUFpzS/v2QBgR76XeoPy9sDmNi9d5FAtG83cmavJPiM0gKu0xIHQdRuqyXv0FY53SZvCyA2sGeRwLgnhLxE+IxCFDCD7ezW1377/qFX5bRK8QtE6cHFAjYaORnw3M5upDtMb9Wuf//gWTl9nrcFEHUG76WvVjFicMqC53Z0geswfltbwDf4s9xNarSr5x7+uZkZjGodMuFNSLcbrtcuIS8Tl7vDjhldqN6eXRC4UyxhXBSQA99hRHq7sVJbwDPAyx0PogYX7gjlBYHbaQ7jWrs8+HYj2O2GKghmTQ2BUFHubBPVOzGbzS0IzMQmEdXYZMGntxvAbtOj5phd8oSScgezmIHCrRvJBYGp6yOIiQIy4dnntNM1S6jk7r8qd6qc0FOYHhlbELh59RomSJtMeB3Yrdp4bQHXrgtyR+KE3onJg+8gc/ZLZM6ex8S+Q0ho7HLhwW7RXK4pUOzZ9YbceT5n6EFSS2FCY59/8wnSjox8eKTaNMeWINCnk3sYSeoojHpDYI+fAnvyNEa9A0iorfLgN2uQbFO7awqAYdYUqb6EVHhO58RYMIw75crf+0ClgjE/A1YElwxPFmNN1kdrCsx/BSp4TOoxkNVRYE+cXjQLpT78BEmFWRJ8qo1EqlV9hlhqeCe9ibcFbtULL/b5tNaB+GtvLhKIHziClAguAT7Zqq7eaFF1LllgXsIW+ELKGTajpRBVWcB9+jlm8zxm+QK4M+cwLk6T0t48Ei3Ki0S9KTsCG3iLvyDlDJsh7ZhUWjDSacLITiPindLhky3KqfSmna2ElOTN3lcknWFldpvUArwKiWbFYUJOeLP3q/8KPtmsuCT7nlS89s51eX5Ycfgm5bVYk6L++6B/SsFqXZ8zuH9aOXjFb1yTdiPRyCRJem1W5/pm2Wu+SXl5vJV8iliOiPWY0zsOZDXUVMPhm1W3Ek2Kt5d0dSI3rM7VkiFtFzNqW7UR8IkW5ffJJnIbsdLhlHZFRmE+l1GYK/XDq6dTLeoLN5rJ2nc9yy7Sbl3HdXT1p3eYTnEdpl/YdmPxfvjUFo3AbtFcSW0mP0u0qYb45arzRoXt7Hw8vUO/IbONfJprb1/XsAevZjVEQ/MnF7GrGBH1TbgAAAAASUVORK5CYII=" alt="Advertencia" class="warning-icon">*Ingrese su fecha de nacimiento 
                                 
+                                    
                                     </div>
                                 </div>
                             </div>
@@ -210,8 +215,8 @@
                                     </div>
                                 </div>
                                 <div class="row g-3 ">
-                                    <h2 style="color: #FFFFFF" class=" fw-bold h2 mt-0  d-none d-md-block">Regístrate y participa.</h2>
-                                    <h2 style="color: #FFFFFF; font-weight: 700" class=" fw-bold h2 mt-0  d-block d-md-none">Regístrate y participa.</h2>
+                                    <h2 style="color: #FFFFFF" class=" fw-bold h2 mt-0  d-none d-md-block">Regístrate y Participa.</h2>
+                                    <h2 style="color: #FFFFFF; font-weight: 700" class=" fw-bold h2 mt-0  d-block d-md-none">Regístrate y Participa.</h2>
                                 </div>
                                 <div class="row g-3">
                                     <p style="color: #FFFFFF">*Campos obligatorios</p>
@@ -222,6 +227,7 @@
                                     <div class="invalid-feedback">
                                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFb0lEQVR4nO2YW2xTdRzHjxJviMobqAm7AcIG6+X0vvV62vV22o11Z2uHxHjhwUBCFIh4CcbEB4kCxkCMCUpCUHmRxAeivBo10ZCgvBB3adfR9vT0ctqelm0w1q85I87AjF3P6aYP+yb/15PP55zf+f1//z9BrGY1q2lIKj5mYznARATf0EeCj7kkeJkrgndgTHAPjAue0JWSO/Rd0dV/suTu33PTwTxL/B8Cml4r+MN7y3T4R4Eeqpb9Qyj7ByH4GAheBoJnYH6V3CGUevrvLtcuFJ19KDh6fy06AvuzpuATKw/OMA9XgpHDAh3myoEwyrQIvnT4IiWuXhQdQfD2IM/b6KOTBuaxFYGf6osYK8Hw9XIgArnwBbu4AijYAuCt/mihm6aWFb7SO3yoHIzMNhq+YKXBW/zIW3xzebP3PRDEAw0FFx9Y6R0+XgmK4MsDz4vL7APf7UWuy30eJPlQwwQqvcMfrxR8vsuDvMmNnKHnaxDvPigfPhg5stLweaMbeUMPcjrXB7LgheCwZTlrnv83eL0LWb2zmtFStCR4eDyPVAKRP6TAp+w0ohYfohYvomYPxrs9SFl9dcHn9E7kdBSyGipdUFjX1y1QCUaOSoHPU72YeH4v5qZn8FfmpqYRG3gBeau/PnitKOBAVm07URd8zrP7yTIdLkgpm7yjF5P7DuL+xF/ch5zFVz88aUdWZZvOqkzPLFmgTEdel1rzvCOI+Mv7FwnEwi/dFagXXm1DRmUFpzS/v2QBgR76XeoPy9sDmNi9d5FAtG83cmavJPiM0gKu0xIHQdRuqyXv0FY53SZvCyA2sGeRwLgnhLxE+IxCFDCD7ezW1377/qFX5bRK8QtE6cHFAjYaORnw3M5upDtMb9Wuf//gWTl9nrcFEHUG76WvVjFicMqC53Z0geswfltbwDf4s9xNarSr5x7+uZkZjGodMuFNSLcbrtcuIS8Tl7vDjhldqN6eXRC4UyxhXBSQA99hRHq7sVJbwDPAyx0PogYX7gjlBYHbaQ7jWrs8+HYj2O2GKghmTQ2BUFHubBPVOzGbzS0IzMQmEdXYZMGntxvAbtOj5phd8oSScgezmIHCrRvJBYGp6yOIiQIy4dnntNM1S6jk7r8qd6qc0FOYHhlbELh59RomSJtMeB3Yrdp4bQHXrgtyR+KE3onJg+8gc/ZLZM6ex8S+Q0ho7HLhwW7RXK4pUOzZ9YbceT5n6EFSS2FCY59/8wnSjox8eKTaNMeWINCnk3sYSeoojHpDYI+fAnvyNEa9A0iorfLgN2uQbFO7awqAYdYUqb6EVHhO58RYMIw75crf+0ClgjE/A1YElwxPFmNN1kdrCsx/BSp4TOoxkNVRYE+cXjQLpT78BEmFWRJ8qo1EqlV9hlhqeCe9ibcFbtULL/b5tNaB+GtvLhKIHziClAguAT7Zqq7eaFF1LllgXsIW+ELKGTajpRBVWcB9+jlm8zxm+QK4M+cwLk6T0t48Ei3Ki0S9KTsCG3iLvyDlDJsh7ZhUWjDSacLITiPindLhky3KqfSmna2ElOTN3lcknWFldpvUArwKiWbFYUJOeLP3q/8KPtmsuCT7nlS89s51eX5Ycfgm5bVYk6L++6B/SsFqXZ8zuH9aOXjFb1yTdiPRyCRJem1W5/pm2Wu+SXl5vJV8iliOiPWY0zsOZDXUVMPhm1W3Ek2Kt5d0dSI3rM7VkiFtFzNqW7UR8IkW5ffJJnIbsdLhlHZFRmE+l1GYK/XDq6dTLeoLN5rJ2nc9yy7Sbl3HdXT1p3eYTnEdpl/YdmPxfvjUFo3AbtFcSW0mP0u0qYb45arzRoXt7Hw8vUO/IbONfJprb1/XsAevZjVEQ/MnF7GrGBH1TbgAAAAASUVORK5CYII=" alt="Advertencia" class="warning-icon">Ingrese un correo electrónico válido
                                 
+                                    
                                     </div>
                                 </div>
                                 <div class="row mb-3 form-group">
@@ -230,33 +236,34 @@
                                     <div class="invalid-feedback">
                                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFb0lEQVR4nO2YW2xTdRzHjxJviMobqAm7AcIG6+X0vvV62vV22o11Z2uHxHjhwUBCFIh4CcbEB4kCxkCMCUpCUHmRxAeivBo10ZCgvBB3adfR9vT0ctqelm0w1q85I87AjF3P6aYP+yb/15PP55zf+f1//z9BrGY1q2lIKj5mYznARATf0EeCj7kkeJkrgndgTHAPjAue0JWSO/Rd0dV/suTu33PTwTxL/B8Cml4r+MN7y3T4R4Eeqpb9Qyj7ByH4GAheBoJnYH6V3CGUevrvLtcuFJ19KDh6fy06AvuzpuATKw/OMA9XgpHDAh3myoEwyrQIvnT4IiWuXhQdQfD2IM/b6KOTBuaxFYGf6osYK8Hw9XIgArnwBbu4AijYAuCt/mihm6aWFb7SO3yoHIzMNhq+YKXBW/zIW3xzebP3PRDEAw0FFx9Y6R0+XgmK4MsDz4vL7APf7UWuy30eJPlQwwQqvcMfrxR8vsuDvMmNnKHnaxDvPigfPhg5stLweaMbeUMPcjrXB7LgheCwZTlrnv83eL0LWb2zmtFStCR4eDyPVAKRP6TAp+w0ohYfohYvomYPxrs9SFl9dcHn9E7kdBSyGipdUFjX1y1QCUaOSoHPU72YeH4v5qZn8FfmpqYRG3gBeau/PnitKOBAVm07URd8zrP7yTIdLkgpm7yjF5P7DuL+xF/ch5zFVz88aUdWZZvOqkzPLFmgTEdel1rzvCOI+Mv7FwnEwi/dFagXXm1DRmUFpzS/v2QBgR76XeoPy9sDmNi9d5FAtG83cmavJPiM0gKu0xIHQdRuqyXv0FY53SZvCyA2sGeRwLgnhLxE+IxCFDCD7ezW1377/qFX5bRK8QtE6cHFAjYaORnw3M5upDtMb9Wuf//gWTl9nrcFEHUG76WvVjFicMqC53Z0geswfltbwDf4s9xNarSr5x7+uZkZjGodMuFNSLcbrtcuIS8Tl7vDjhldqN6eXRC4UyxhXBSQA99hRHq7sVJbwDPAyx0PogYX7gjlBYHbaQ7jWrs8+HYj2O2GKghmTQ2BUFHubBPVOzGbzS0IzMQmEdXYZMGntxvAbtOj5phd8oSScgezmIHCrRvJBYGp6yOIiQIy4dnntNM1S6jk7r8qd6qc0FOYHhlbELh59RomSJtMeB3Yrdp4bQHXrgtyR+KE3onJg+8gc/ZLZM6ex8S+Q0ho7HLhwW7RXK4pUOzZ9YbceT5n6EFSS2FCY59/8wnSjox8eKTaNMeWINCnk3sYSeoojHpDYI+fAnvyNEa9A0iorfLgN2uQbFO7awqAYdYUqb6EVHhO58RYMIw75crf+0ClgjE/A1YElwxPFmNN1kdrCsx/BSp4TOoxkNVRYE+cXjQLpT78BEmFWRJ8qo1EqlV9hlhqeCe9ibcFbtULL/b5tNaB+GtvLhKIHziClAguAT7Zqq7eaFF1LllgXsIW+ELKGTajpRBVWcB9+jlm8zxm+QK4M+cwLk6T0t48Ei3Ki0S9KTsCG3iLvyDlDJsh7ZhUWjDSacLITiPindLhky3KqfSmna2ElOTN3lcknWFldpvUArwKiWbFYUJOeLP3q/8KPtmsuCT7nlS89s51eX5Ycfgm5bVYk6L++6B/SsFqXZ8zuH9aOXjFb1yTdiPRyCRJem1W5/pm2Wu+SXl5vJV8iliOiPWY0zsOZDXUVMPhm1W3Ek2Kt5d0dSI3rM7VkiFtFzNqW7UR8IkW5ffJJnIbsdLhlHZFRmE+l1GYK/XDq6dTLeoLN5rJ2nc9yy7Sbl3HdXT1p3eYTnEdpl/YdmPxfvjUFo3AbtFcSW0mP0u0qYb45arzRoXt7Hw8vUO/IbONfJprb1/XsAevZjVEQ/MnF7GrGBH1TbgAAAAASUVORK5CYII=" alt="Advertencia" class="warning-icon">Ingrese un número de teléfono válido
                                 
+                                    
                                     </div>
                                 </div>
                                 <div class="row mb-3 form-group">
-                                    <label for="instagram">Usuario de Instagram*</label>
-                                    <input type="text" class="form-control" id="instagram" name="instagram" placeholder="@usuario" required>
-                                    <div class="invalid-feedback">
-                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFb0lEQVR4nO2YW2xTdRzHjxJviMobqAm7AcIG6+X0vvV62vV22o11Z2uHxHjhwUBCFIh4CcbEB4kCxkCMCUpCUHmRxAeivBo10ZCgvBB3adfR9vT0ctqelm0w1q85I87AjF3P6aYP+yb/15PP55zf+f1//z9BrGY1q2lIKj5mYznARATf0EeCj7kkeJkrgndgTHAPjAue0JWSO/Rd0dV/suTu33PTwTxL/B8Cml4r+MN7y3T4R4Eeqpb9Qyj7ByH4GAheBoJnYH6V3CGUevrvLtcuFJ19KDh6fy06AvuzpuATKw/OMA9XgpHDAh3myoEwyrQIvnT4IiWuXhQdQfD2IM/b6KOTBuaxFYGf6osYK8Hw9XIgArnwBbu4AijYAuCt/mihm6aWFb7SO3yoHIzMNhq+YKXBW/zIW3xzebP3PRDEAw0FFx9Y6R0+XgmK4MsDz4vL7APf7UWuy30eJPlQwwQqvcMfrxR8vsuDvMmNnKHnaxDvPigfPhg5stLweaMbeUMPcjrXB7LgheCwZTlrnv83eL0LWb2zmtFStCR4eDyPVAKRP6TAp+w0ohYfohYvomYPxrs9SFl9dcHn9E7kdBSyGipdUFjX1y1QCUaOSoHPU72YeH4v5qZn8FfmpqYRG3gBeau/PnitKOBAVm07URd8zrP7yTIdLkgpm7yjF5P7DuL+xF/ch5zFVz88aUdWZZvOqkzPLFmgTEdel1rzvCOI+Mv7FwnEwi/dFagXXm1DRmUFpzS/v2QBgR76XeoPy9sDmNi9d5FAtG83cmavJPiM0gKu0xIHQdRuqyXv0FY53SZvCyA2sGeRwLgnhLxE+IxCFDCD7ezW1377/qFX5bRK8QtE6cHFAjYaORnw3M5upDtMb9Wuf//gWTl9nrcFEHUG76WvVjFicMqC53Z0geswfltbwDf4s9xNarSr5x7+uZkZjGodMuFNSLcbrtcuIS8Tl7vDjhldqN6eXRC4UyxhXBSQA99hRHq7sVJbwDPAyx0PogYX7gjlBYHbaQ7jWrs8+HYj2O2GKghmTQ2BUFHubBPVOzGbzS0IzMQmEdXYZMGntxvAbtOj5phd8oSScgezmIHCrRvJBYGp6yOIiQIy4dnntNM1S6jk7r8qd6qc0FOYHhlbELh59RomSJtMeB3Yrdp4bQHXrgtyR+KE3onJg+8gc/ZLZM6ex8S+Q0ho7HLhwW7RXK4pUOzZ9YbceT5n6EFSS2FCY59/8wnSjox8eKTaNMeWINCnk3sYSeoojHpDYI+fAnvyNEa9A0iorfLgN2uQbFO7awqAYdYUqb6EVHhO58RYMIw75crf+0ClgjE/A1YElwxPFmNN1kdrCsx/BSp4TOoxkNVRYE+cXjQLpT78BEmFWRJ8qo1EqlV9hlhqeCe9ibcFbtULL/b5tNaB+GtvLhKIHziClAguAT7Zqq7eaFF1LllgXsIW+ELKGTajpRBVWcB9+jlm8zxm+QK4M+cwLk6T0t48Ei3Ki0S9KTsCG3iLvyDlDJsh7ZhUWjDSacLITiPindLhky3KqfSmna2ElOTN3lcknWFldpvUArwKiWbFYUJOeLP3q/8KPtmsuCT7nlS89s51eX5Ycfgm5bVYk6L++6B/SsFqXZ8zuH9aOXjFb1yTdiPRyCRJem1W5/pm2Wu+SXl5vJV8iliOiPWY0zsOZDXUVMPhm1W3Ek2Kt5d0dSI3rM7VkiFtFzNqW7UR8IkW5ffJJnIbsdLhlHZFRmE+l1GYK/XDq6dTLeoLN5rJ2nc9yy7Sbl3HdXT1p3eYTnEdpl/YdmPxfvjUFo3AbtFcSW0mP0u0qYb45arzRoXt7Hw8vUO/IbONfJprb1/XsAevZjVEQ/MnF7GrGBH1TbgAAAAASUVORK5CYII=" alt="Advertencia" class="warning-icon">Ingrese un usuario de instagram valido
-                                
-                                    </div>
+                                    <label for="instagram">Usuario de Instagram</label>
+                                    <input type="text" id="instagram" name="instagram" placeholder="@usuario">
                                 </div>
                                 <div class="row mb-3 form-group">
                                     <div class="form-check">
-                                        <input class="form-check-input custom-checkbox" name="checkbox2" type="checkbox" value="" id="flexTCheckChecked"  required />
+                                        <input class="form-check-input custom-checkbox" name="checkbox2" type="checkbox" value="" id="flexTCheckChecked" required/>
                                         <label class="form-check-label text-left" for="flexTCheckChecked" style="font-size: 11px;font-weight: 700;padding: 5px 0px;margin-left: 20px;">
-                                        He leído y acepto los <a href="./Terminos_y_Condiciones_promo_mama.pdf" target="_blank">Términos y Condiciones</a> de la promoción
-                                        </label> 
+                                            He leído y acepto los <a href="./Terminos_y_Condiciones_promo_mama.pdf" target="_blank">Términos y Condiciones</a>
+                                            de la promoción
+                                        
+                                        </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input custom-checkbox" name="checkbox2" type="checkbox" value="" id="flexTCheckChecked"  required />
+                                        <input class="form-check-input custom-checkbox" name="checkbox2" type="checkbox" value="" id="flexTCheckChecked" required/>
                                         <label class="form-check-label text-left" for="flexPPCheckChecked" style="font-size: 11px;font-weight: 700;padding: 5px 0px;margin-left: 20px;">
-                                        He leído y acepto los <a href="./Tratamiento_de_Uso_de_Datos_-_GirosMama__.pdf" target="_blank">Términos y Condiciones</a> para el tratamiento de mis datos.
+                                            He leído y acepto los <a href="./25_Política_de_Protección_de_Datos_Personales_Primax_Comercial_del_Ecuador.pdf" target="_blank">Términos y Condiciones</a>
+                                            para el tratamiento de mis datos.
+                                        
                                         </label>
                                     </div>
                                 </div>
                             </div>
                             <button id="back" class="submit-btn">Regresar</button>
-                            <button id="complete" class="submit-btn">Completar registro</button>
+                            <button id="complete" type="submit" class="submit-btn">Completar registro</button>
                         </form>
                         <!-- Campos adicionales de la ultima  -->
                         <div class="col-md-12">
@@ -276,21 +283,25 @@
                                     </div>
                                 </div>
                                 <div style="align-items: center;">
-    <h2 class="agradecimiento" style="color: #FFFFFF; margin-right: 15px; font-weight: bold;">
-        ¡Listo <span id="confirmationMessage">[Nombre de usuario]</span> ya estás registrado!
-    </h2>
-    <p style="font-size:16px; color: #FFFFFF; margin-top: 10px;">
-        Recuerda que solo participan tus consumos de <strong>gasolina Super G-Prix</strong> con las tarjetas participantes.
-    </p>
-    <p class="thanks" style="font-size:16px; color: #FFFFFF;">
-        <strong>¿Quieres más oportunidades para participar?</strong>
-        <br>Síguenos en nuestra cuenta de Instagram
-    </p>
-    <a href="https://www.instagram.com/primaxec/" class="instagram-button" target="_blank">@primaxec</a>
-</div>
+                                    <h2 class="agradecimiento" style="color: #FFFFFF; margin-right: 15px; font-weight: bold; font-family: 'Neo Sans Std', sans-serif ; ">
+                                        ¡Listo <span id="confirmationMessage">[Nombre de usuario]</span>
+                                        ya estás registrado!
+    					
+                                    </h2>
+                                    <p class="agradecimiento" style="font-size:16px; color: #FFFFFF; margin-top: 10px;">
+                                        Recuerda que solo participan tus consumos de <strong>gasolina Super G-Prix</strong>
+                                        con las tarjetas participantes.
+    					
+                                    </p>
+                                    <p class="thanks" style="font-size:16px; color: #FFFFFF;">
+                                        <strong>¿Quieres más oportunidades para participar?</strong>
+                                        <br>Síguenos en nuestra cuenta de Instagram
+    					
+                                    </p>
+                                    <a href="https://www.instagram.com/primaxec/" class="instagram-button" target="_blank">@primaxec</a>
+                                </div>
                             </div>
                         </div>
-
                         <!-- Campos adicionales luego de verificar el correo  
                         <div class="col-md-12">
                             <div id="confirmation2" class="form-container" style="display: none;">
@@ -314,7 +325,8 @@
                 <div class="footer-left">
                     <p>
                         Todos los derechos reservados 2024 - 
-                        <a href="" target="_blank">
+                        
+                        <a href="/TÉRMINOS_Y_CONDICIONES_CAMPAÑA_PRIMAX_DINERS.pdf" target="_blank">
                             <u>Lee nuestros términos y condiciones de la promoción</u>
                         </a>
                     </p>
@@ -351,4 +363,4 @@
         </script>
         <script src="functions.js"></script>
     </body>
-</html>
+</html lang="es">
