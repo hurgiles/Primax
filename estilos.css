@@ -1003,6 +1003,10 @@ button:hover {
     .agradecimiento{
         margin-left: -20px;
     }
+    #first-image{
+    width: 550px;
+    margin-top: -0px;*/
+    }
 }
 @media only screen and (min-width: 1440px) {
     .label.start {
@@ -1107,6 +1111,6 @@ button:hover {
     /* Aquí puedes poner tus estilos específicos */
     #first-image{
     width: 550px;
-    /*margin-top: -75px;*/
+    margin-top: -0px;*/
     }
 }
