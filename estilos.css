@@ -1053,6 +1053,10 @@ button:hover {
     .instagram-button{
         margin-left: 125px;
     }
+    #first-image{
+    width: 550px;
+    margin-top: -0px;*/
+    }
 
 }
 @media only screen and (max-width: 480px) {
