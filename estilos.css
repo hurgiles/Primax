@@ -742,6 +742,10 @@ button:hover {
     .instagram-button{
         margin-left: 0px;
     }
+    #first-image{
+    width: 550px;
+    margin-top: -0px;*/
+    }
 }
 /* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
